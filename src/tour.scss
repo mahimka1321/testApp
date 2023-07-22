@@ -1,0 +1,96 @@
+.__tour
+{
+    display: inline-grid;
+    width: 225px;
+    height: 250px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: var(--colorBlue200);
+
+    transition: .3s;
+    will-change: transform;
+    text-decoration: none;
+
+    //border: 0.5px solid var(--colorBlue200);
+
+    .__img_tour
+    {
+        .img_container
+        {
+            height: 170px;
+            .img
+            {
+                display: flex;
+                justify-content: center;
+                width: 225px;
+                height: 170px;
+                border-radius: 8px 8px 0px 0px; 
+
+            }
+            h1
+            {
+                display: flex;
+                margin-top: -35px;
+                margin-left: 15px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #F4F4FF;
+            }
+        }
+    }
+    .__info_tour
+    {
+        position: relative;
+        z-index: 2;
+        top: -170px;
+        display: flex;
+        justify-content: right;
+        ul
+        {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-top: 170px;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            li
+            {
+                color: var(--colWhite_400);
+                font-size: 12px;
+                font-weight: 400;
+                margin-top: 11px;
+                svg
+                {
+                    path 
+                    {
+                        fill: var(--colWhite_400);
+                    }
+                }
+            }
+            .info__t_last
+            {
+                width: 100px;
+                height: 22px;
+                border-radius: 5px;
+                color: var(--colorBlue200);
+                background: var(--colWhite_400);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    &:hover
+    {
+        transform: scale(1.02);
+        transition: 0.3s;
+
+        cursor: pointer;
+    }
+}
+
+
+

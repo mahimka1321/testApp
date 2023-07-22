@@ -1,0 +1,104 @@
+.new_tour
+{
+    width: 440px;
+    height: 150px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    border-radius: 8px;
+    background: var(--colorBlue200);
+
+    transition: .3s;
+    will-change: transform;
+
+    display: flex;            
+    min-width: unset;
+    width: unset;
+    max-width: unset;
+
+    padding-bottom: 20px;
+    text-decoration: none;
+
+    //border: 1px solid var(--colorBlue200);
+
+    .new__img_tour
+    {
+        .img_container
+        {
+            img
+            {
+                width: 220px;
+                height: 170px;
+                border-radius: 8px 0px 0px 8px;
+                box-shadow: 5px 0px 10px 0px var(--BH);
+            }
+            p
+            {
+                position: sticky;
+                bottom: 32px;
+                margin-left: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 98px;
+                height: 22px;
+                font-size: 12px;
+                font-weight: 600;
+                border-radius: 8px;
+                color: var(--colorBlue200);
+                background: var(--colWhite_400);
+            }
+        }
+    }
+    .new__info_tour
+    {
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        ul
+        {
+            padding-right: 15px;
+            list-style: none;
+            li
+            {
+                color: var(--colWhite_400);
+                font-size: 12px;
+                font-weight: 400;
+                margin-top: 11px;
+                svg
+                {
+                    path 
+                    {
+                        fill: var(--colWhite_400);
+                    }
+                }
+                h1
+                {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .info__new_last
+            {
+                width: 100px;
+                height: 22px;
+                border-radius: 5px;
+                color: var(--colorBlue200);
+                background: var(--colWhite_400);
+                display: flex;
+                justify-content: right;
+                padding-right: 15px;
+                align-items: center;
+            }
+        }
+    }
+    &:hover
+    {
+        transform: scale(1.02);
+        transition: 0.3s;
+
+        cursor: pointer;
+    }
+}
+
+
+
