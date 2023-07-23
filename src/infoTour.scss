@@ -166,11 +166,12 @@
             height: 30px;
     
             border-radius: 25px;
-            background: #D1E5FF;
-            color: var(--colWhite_400);
+            background: none;
+            border: 1px solid var(--colBlueBtn);
+            color: var(--colDarck);
 
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 400;
 
             display: flex;
             text-align: center;
@@ -247,7 +248,7 @@
 
                 border: 1px solid var(--colBlueBtn);
                 background: var(--colWhiteBtn);
-                color: #000;
+                color: var(--colDarck);
 
                 margin-left: 100px;
 
@@ -272,7 +273,7 @@
 
                 border: 1px solid var(--colBlueBtn);
                 background: var(--colWhiteBtn);
-                color: #000;
+                color: var(--colDarck);
 
                 border-radius: 5px;
 
