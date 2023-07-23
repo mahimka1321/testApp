@@ -8,7 +8,7 @@ function NewTour(props) {
         <Link to='/info-tour' className='new_tour'>
             <div className='new__img_tour'>
                 <div className='img_container'>
-                    <img className='img' src={props.imgTour}/>
+                    <img className='img' alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={props.imgTour}/>
                     <p>Новинка</p>
                 </div>
                 

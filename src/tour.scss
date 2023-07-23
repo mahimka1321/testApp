@@ -29,6 +29,7 @@
                 height: 170px;
                 border-radius: 8px 8px 0px 0px; 
 
+                transition: 0.3s;
             }
             h1
             {
@@ -38,6 +39,8 @@
                 font-size: 18px;
                 font-weight: 500;
                 color: #F4F4FF;
+
+                position: relative;
             }
         }
     }
@@ -89,6 +92,11 @@
         transition: 0.3s;
 
         cursor: pointer;
+    }
+    &:hover .img
+    {
+        filter: brightness(70%);
+        transition: 0.3s;
     }
 }
 
