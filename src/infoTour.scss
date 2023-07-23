@@ -1,21 +1,32 @@
-.info__page_tour
+
+.bgb
 {
     display: block;
     width: 100%;
     max-height: 13500px;
     min-height: 200px;
     height: 100%;
+    background: var(--colWhite_400);    display: block;
+    width: 100%;
+    max-height: 13500px;
+    min-height: 200px;
+    height: 100%;
     background: var(--colWhite_400);
+}
+
+.info__page_tour
+{
+    margin:  0 auto;
+    padding-top: 70px;
+    width: 1000px;
+    height: 100vh;
+    background: var(--colWhite_400);
+    box-shadow: 0px 0px 15px 0px var(--BH);
     .top__info_tour
     {
         display: flex;
         margin:  0 auto;
         justify-content: center;
-        padding-top: 70px;
-        width: 1000px;
-        height: 100vh;
-        background: var(--colWhite_400);
-        box-shadow: 0px 0px 15px 0px var(--BH);
         .slider__tour_info
         {
             img
@@ -40,6 +51,10 @@
                     margin: 3px;
 
                     cursor: pointer;
+                    &:hover
+                    {
+                        background: var(--colorBlue200);
+                    }
                 }
                 span:first-child
                 {
@@ -139,4 +154,139 @@
             }
         }
     }
+    .menu_controls
+    {
+        display: flex;
+        max-width: 845px;
+        width: 100%;
+        margin: 20px;
+        margin-top: 30px;
+        .btn__menu_controls{
+            width: 120px;
+            height: 30px;
+    
+            border-radius: 25px;
+            background: #D1E5FF;
+            color: var(--colWhite_400);
+
+            font-size: 13px;
+            font-weight: 600;
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            &:not(:first-child)
+            {
+                margin-left: 20px;
+            }
+            &:hover
+            {
+                background: var(--colorBlue200);
+                cursor: pointer;
+            }
+        }
+        .controls__btn_active
+        {
+            background: var(--colorBlue200);
+        }
+    }
+    .containet__wrapper_in-tour
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+        .popopo 
+        {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background: var(--colWhite_400);
+            transition: .5s;
+            cursor: pointer;
+            &:hover
+            {
+                background: var(--colorBlue200);
+                transition: .8s;
+            }
+            img 
+            {
+                width: 35px;
+                height: 35px;
+                margin-left: 20px;
+                border-radius: 8px;
+            }
+            div
+            {
+                display: block; 
+                height: 35px;
+                margin-left: 10px;
+                color: var(--colDarck);
+                font-size: 14px;
+
+                h5
+                {                
+                    font-weight: 300;
+                }
+                h4
+                {
+                    font-weight: 400;
+
+                }
+            }
+            .popopo:hover > div
+            {
+                background: var(--colorBlue200);
+                transition: .5s;
+            }
+            .star_
+            {
+                width: 50px;
+                height: 22px;
+
+                border: 1px solid var(--colBlueBtn);
+                background: var(--colWhiteBtn);
+                color: #000;
+
+                margin-left: 100px;
+
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 5px;
+
+                font-size: 12px;
+                font-weight: 400;
+                span 
+                {
+                    margin-right: 5px;
+                }
+            }
+            .__nopius
+            {
+                width: 100px;
+                height: 22px;
+
+                border: 1px solid var(--colBlueBtn);
+                background: var(--colWhiteBtn);
+                color: #000;
+
+                border-radius: 5px;
+
+                font-size: 12px;
+                font-weight: 400;
+
+                margin-left: 20px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
+
+

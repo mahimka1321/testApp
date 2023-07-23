@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import WrapperTour from './WrapperTour';
 import Hoocks from './Hoocks';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ function InfoTour() {
     }= Hoocks();
 
     return (
-        <>
+        <div className='bgb'>
             <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className='info__page_tour'>
                 <div className='top__info_tour'>
@@ -114,8 +115,25 @@ function InfoTour() {
                         </div>
                     </div>
                 </div>
+                <div className='menu_controls'>
+                    <button className='btn__menu_controls controls__btn_active'>по цене 🠝</button>
+                    <button className='btn__menu_controls'>по цене 🠟</button>
+                    <button className='btn__menu_controls'>по кол-во 🠝</button>
+                    <button className='btn__menu_controls'>по кол-во 🠟</button>
+                    <button className='btn__menu_controls'>по рейтингу 🠝</button>
+                    <button className='btn__menu_controls'>по рейтингу 🠟</button>
+                </div>
+                <div className='containet__wrapper_in-tour'>
+                    <WrapperTour/>
+                    <WrapperTour/>
+                    <WrapperTour/>
+                    <WrapperTour/>
+                    <WrapperTour/>
+                    <WrapperTour/>
+                    <WrapperTour/>
+                </div>
             </div>
-        </>
+        </div>
     );
 }
 
