@@ -7,11 +7,10 @@ import App from './App';
 import './on.css';
 import './color.css';
 
-const root = ReactDOMClient.createRoot(document.getElementById('root'));
+const root = ReactDOMClient.createRoot(
+    document.getElementById('root'));
 root.render(
-
-        <BrowserRouter basename="/testapp">
-            <App />
-        </BrowserRouter>
-
+    <BrowserRouter basename="/testapp">
+        <App />
+    </BrowserRouter>
 );

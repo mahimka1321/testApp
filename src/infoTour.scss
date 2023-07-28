@@ -206,6 +206,8 @@
             background: var(--colWhite_400);
             transition: .5s;
             cursor: pointer;
+
+            text-decoration: none;
             &:hover
             {
                 background: var(--colorBlue200);

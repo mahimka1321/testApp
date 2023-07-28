@@ -1,12 +1,14 @@
 import React from 'react';
 import Aleks from './assets/img/Александров/1.jpg';
 import './infoTour.scss';
-function WrapperTour() {
-    return (
-        <div className='popopo'>
+import { Link } from 'react-router-dom';
+
+function WrapperTour(props) {
+    return ( 
+        <Link to={props.tourlink} className='popopo'>
             <img alt='' src={Aleks}/>
             <div>
-                <h4>Семейный тур</h4>
+                <h4>{props.title}</h4>
                 <h5>Александров</h5>
             </div>
             <div style={{display:'flex', marginLeft:'160px', alignItems:'center'}}>
@@ -22,7 +24,7 @@ function WrapperTour() {
                 <p className='__nopius'>43 мин</p>
                 <p className='__nopius'>799 р</p>
             </div>
-        </div>
+        </Link>
     );
 }
 

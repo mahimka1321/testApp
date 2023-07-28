@@ -6,7 +6,7 @@ import './tour.scss';
 
 function Tour(props) {
     return (
-        <Link to='/info-tour' className='__tour'>
+        <Link to={props.tourlink} className='__tour'>
             <div className='__img_tour'>
                 <div className='img_container'>
                     <img className='img' alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={props.imgTour}/>
