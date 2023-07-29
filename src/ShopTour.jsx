@@ -3,7 +3,7 @@ import Header from './Header';
 import WrapperTour from './WrapperTour';
 import Hoocks from './Hoocks';
 import { Link } from 'react-router-dom';
-
+import Menu from './Menu';
 
 import './infoTour.scss';
 import Aleks from './assets/img/Александров/1.jpg';
@@ -17,7 +17,13 @@ function ShopTour() {
     return (
         <div className='bgb'>
             <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
-            <div className='info__page_tour'>
+            <div className="opMbox">
+                <Menu/>
+            <div className='info__page_tour'
+            style={{
+                position:'relative',
+                zIndex:'2'
+            }}>
                 <div className='top__info_tour'>
                     <div className='slider__tour_info'>
                         <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={Aleks}/>
@@ -128,6 +134,8 @@ function ShopTour() {
                 <div className='containet__wrapper_in-tour' style={{marginTop:'25px'}}>
                     <WrapperTour title='Введение'/>
                 </div>
+            </div>
+            <div className="opBox opBoxTwoo"></div>
             </div>
         </div>
     );
