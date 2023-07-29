@@ -131,7 +131,8 @@ function ShopTour() {
                         </div>
                     </div>
                 </div>
-                <div className='containet__wrapper_in-tour' style={{marginTop:'25px'}}>
+                <i><Link to='/info-tour'>Назад</Link></i>
+                <div className='containet__wrapper_in-tour' style={{marginTop:'80px'}}>
                     <WrapperTour title='Введение'/>
                 </div>
             </div>

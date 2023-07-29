@@ -148,6 +148,52 @@
             }
         }
     }
+    i 
+    {
+        position: absolute;
+        left: -15px;
+        width: 200px;
+        height: 30px;
+        border-radius: 40px;
+        background: var(--colorBlue200);
+        margin-top: 30px;
+
+        z-index: 1;
+
+        border-bottom-left-radius: 0;
+        a 
+        {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: var(--colDarck);
+        }
+        &::before
+        {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 15px;
+            height: 20px;
+            background: rgb(34, 121, 202);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            z-index: 2;
+        }
+        &::after
+        {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 15px;
+            height: 25px;
+            background: var(--colorBlue200);
+        }
+    }
     .menu_controls
     {
         display: flex;
