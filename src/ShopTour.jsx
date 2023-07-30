@@ -143,7 +143,7 @@ function ShopTour() {
                     <h1>Область посещения</h1>
                     <div>
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43c6b160edf8bde304bf9f5a2e192689329022d48f6730c86dc07f36d45aceb&amp;source=constructor" width="400" height="280" frameborder="0"></iframe>
-                        <p><span></span>Красным маркером показанно зоны которая будет посещена во время прохождения тура</p>
+                        <p><span></span>Красным маркером показанна зона которая будет посещена во время прохождения тура</p>
                     </div>
                 </div>
                 <dic className="city__info_tour">
