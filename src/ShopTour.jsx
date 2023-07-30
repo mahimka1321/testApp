@@ -19,7 +19,7 @@ function ShopTour() {
             <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="opMbox">
                 <Menu/>
-            <div className='info__page_tour'
+            <div className='info__page_tour sh_op'
             style={{
                 position:'relative',
                 zIndex:'2'
@@ -135,6 +135,26 @@ function ShopTour() {
                 <div className='containet__wrapper_in-tour' style={{marginTop:'80px'}}>
                     <WrapperTour title='Введение'/>
                 </div>
+                <div className='about__us_tour'>
+                    <h1>О туре</h1>
+                    <p>Этот тур подойдек каждому, как семье с детьми, так и бабке которая не знает куда слить свои миллиарды и еще какой то текст Конструктор карт Яндекса позволяет создать карту онлайн без навыков программирования. Можно отметить на карте нужные объекты, нарисовать схему проезда, маршрут прогулки или отметить зону доставки. ... Карты для печати в высоком разрешении можно создать только на основе слоя «Схема». Карты для печати в высоком разрешении можно создать только на компьютере в последних версиях браузеров Firefox, Chrome, Яндекс.Браузер, Edge, Safari иммирования. Можно отметить на карте нужные объекты, нарисоват</p>
+                </div>
+                <div className='map__info_tour'>
+                    <h1>Область посещения</h1>
+                    <div>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43c6b160edf8bde304bf9f5a2e192689329022d48f6730c86dc07f36d45aceb&amp;source=constructor" width="400" height="280" frameborder="0"></iframe>
+                        <p><span></span>Красным маркером показанно зоны которая будет посещена во время прохождения тура</p>
+                    </div>
+                </div>
+                <dic className="city__info_tour">
+                    <h1>Краткое описание города</h1>
+                    <p>Этот тур подойдек каждому, как семье с детьми, так и бабке которая не знает куда слить свои миллиарды и еще какой то текст Конструктор карт Яндекса позволяет создать карту онлайн без навыков программирования. Можно отметить на карте нужные объекты, нарисовать схему проезда, маршрут прогулки или отметить зону доставки. ... Карты для печати в высоком разрешении можно создать только</p>
+                    <div>
+                        <Link to='/info-tour'>Назад</Link>
+                        <Link to=''>Купить тур</Link>
+                        <p>После покупки ваш тур будет в вашем личном кабинете </p>
+                    </div>
+                </dic>
             </div>
             <div className="opBox opBoxTwoo"></div>
             </div>

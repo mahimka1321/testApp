@@ -323,6 +323,7 @@
             {
                 background: var(--colorBlue200);
                 transition: .8s;
+                color: #F4F4FF;
             }
             img 
             {
@@ -348,11 +349,6 @@
                     font-weight: 400;
 
                 }
-            }
-            .popopo:hover > div
-            {
-                background: var(--colorBlue200);
-                transition: .5s;
             }
             .star_
             {
@@ -401,6 +397,143 @@
             }
         }
     }
+    .about__us_tour
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        h1 
+        {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--colorBlue200);
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+        p 
+        {
+            font-size: 16px;
+            line-height: 24px;
+            font-style: normal;
+            font-weight: 400;
+            color: var(--colDarck);
+        }
+    }
+    .map__info_tour
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        h1 
+        {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--colorBlue200);
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+        div 
+        {
+            display: flex;
+            iframe 
+            {
+                border-radius: 8px;
+                border: 1px solid #616161;
+            }
+            p 
+            {
+                display: flex;
+                max-width: 330px;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                color: var(--colDarck);
+                span 
+                {
+                    display: block;
+                    width: 15px;
+                    border-radius: 8px;
+                    height: 80px;
+                    background: #EE4C46;
+                    margin-left: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .city__info_tour
+    {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        h1 
+        {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--colorBlue200);
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+        p 
+        {
+            color: var(--colDarck);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+        div 
+        {
+            display: flex;
+            margin-top: 20px;
+            a 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 35px;
+                border-radius: 8px;
+                background: #23A6FF;
+                color: #F4F4FF;
+                text-decoration: none;
+                margin-right: 20px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            p 
+            {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 400;
+                height: 35px;
+                color: #23A6FF;
+            }
+        }
+    }
 }
 
 
+.popopo:hover > div > h4
+{
+    color: #F4F4FF;
+    transition: .3s ;
+}
+
+.popopo:hover > div > h5
+{
+    color: #F4F4FF;
+    transition: .3s ;
+}
+
+.sh_op{
+
+    min-height: unset;
+    height: unset;
+    max-height: unset;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 8px 8px;
+    margin-bottom: 20px;
+}
