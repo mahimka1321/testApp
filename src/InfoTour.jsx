@@ -131,12 +131,12 @@ function InfoTour() {
             </div>
             <div className='containet__wrapper_in-tour'>
                 <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур'/>
-                <WrapperTour title='Семейный тур'/>
-                <WrapperTour title='Семейный тур'/>
-                <WrapperTour title='Семейный тур'/>
-                <WrapperTour title='Семейный тур'/>
-                <WrapperTour title='Семейный тур'/>
+                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
+                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
+                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
+                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
+                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
+                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
             </div>
             </div>
             <div className="opBox opBoxTwoo"></div>
