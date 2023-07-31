@@ -27,13 +27,6 @@ function InfoTour() {
             <div className='top__info_tour'>
                 <div className='slider__tour_info'>
                     <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={Aleks}/>
-                    <div className='__slider_swap'>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </div>
                 <div className='container__wrapper_info'>
                     <h1 style={{display:'block',wordWrap: 'break-word'}}>Александров</h1>

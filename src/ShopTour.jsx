@@ -7,9 +7,96 @@ import Menu from './Menu';
 import Comments from './Comments';
 
 import './infoTour.scss';
+
 import Aleks from './assets/img/Александров/1.jpg';
 
+import Aleks1 from './assets/img/Александров/1.jpg';
+import Aleks2 from './assets/img/Александров/2.jpg';
+import Aleks3 from './assets/img/Александров/3.jpg';
+import Aleks4 from './assets/img/Александров/4.jpg';
+import Aleks5 from './assets/img/Александров/5.jpg';
+
+
 function ShopTour() {
+
+const [imgA, setImgA] = React.useState(Aleks1)
+
+function img_A_1() {
+        setImgA(Aleks1);
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        img_Ac_1.style.background = '#23A6FF'
+
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_2.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+
+    }
+
+function img_A_2() {
+        setImgA(Aleks2);
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        img_Ac_2.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+    }
+
+function img_A_3() {
+        setImgA(Aleks3);
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        img_Ac_3.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_2.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+    }
+
+function img_A_4() {
+        setImgA(Aleks4);
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        img_Ac_4.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_2.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+    }
+
+function img_A_5() {
+        setImgA(Aleks5);
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_5.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_2.style.background = '#F4F4FF'
+    }
+
 
     const {
         numTheme,setNumTheme,search_active, rorp
@@ -28,13 +115,13 @@ function ShopTour() {
             }}>
                 <div className='top__info_tour'>
                     <div className='slider__tour_info'>
-                        <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={Aleks}/>
+                        <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={imgA}/>
                         <div className='__slider_swap'>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span onClick={img_A_1} id='img_Ac_1'></span>
+                            <span onClick={img_A_2} id='img_Ac_2'></span>
+                            <span onClick={img_A_3} id='img_Ac_3'></span>
+                            <span onClick={img_A_4} id='img_Ac_4'></span>
+                            <span onClick={img_A_5} id='img_Ac_5'></span>
                         </div>
                     </div>
                     <div className='container__wrapper_info'>
@@ -135,7 +222,16 @@ function ShopTour() {
                 </div>
                 <i><Link to='/info-tour'>Назад</Link></i>
                 <div className='containet__wrapper_in-tour' style={{marginTop:'80px'}}>
-                    <WrapperTour title='Введение'/>
+                <Link to='' className='popopo'>
+            <img alt='' src={Aleks}/>
+            <div>
+                <h4>Введение</h4>
+                <h5>Александров</h5>
+            </div>
+            <div style={{display:'flex', marginLeft:'210px', alignItems:'center'}}>
+                <p className='__nopius'>6 мин</p>
+            </div>
+        </Link>
                 </div>
                 <div className='about__us_tour'>
                     <h1>О туре</h1>
