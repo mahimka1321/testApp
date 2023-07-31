@@ -38,7 +38,7 @@ function ShopTour() {
                         </div>
                     </div>
                     <div className='container__wrapper_info'>
-                        <h1>Александров - Семейный тур</h1>
+                        <h1 style={{display:'block',wordWrap: 'break-word'}}>Александров - Семейный тур</h1>
                         <div className='status__tour'>
                             <p className='star_'>
                                 <span>

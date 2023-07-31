@@ -36,7 +36,7 @@ function InfoTour() {
                     </div>
                 </div>
                 <div className='container__wrapper_info'>
-                    <h1>Александров</h1>
+                    <h1 style={{display:'block',wordWrap: 'break-word'}}>Александров</h1>
                     <div className='status__tour'>
                         <p className='star_'>
                             <span>
