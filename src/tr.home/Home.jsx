@@ -1,56 +1,56 @@
 import React, { useRef } from "react";
-import { Link } from 'react-router-dom';
 /*  Шапка  */
-import Header from './Header';
-import Menu from './Menu';
-
-import Hoocks from './Hoocks';
-
+import Header from '../tr.all.header/Header';
+/*  Меню  */
+import Menu from '../tr.all.menu/Menu';
 /*  Новые туры  */
-import NewTour from './NewTour';
-import Tour from './Tour';
-
+import NewTour from '../tr.i/tr.new/NewTour';
+/*  Туры  */
+import Tour from '../tr.i/tr/Tour';
+/*  Хуки  */
+import Hoocks from '../Hoocks';
 /*  Стили главной страницы  */
 import './home.scss';
 
+
 /*  Суздаль  */
-import suzdal_tour_1 from './assets/img/Суздаль/1.jpg';
+import suzdal_tour_1 from '../assets/img/Суздаль/1.jpg';
 /*  Владимир  */
-import vladimir_tour_1 from './assets/img/Владимир/1.jpg';
+import vladimir_tour_1 from '../assets/img/Владимир/1.jpg';
 /*  Александров  */
-import aleksandrov_tour_1 from './assets/img/Александров/1.jpg';
+import aleksandrov_tour_1 from '../assets/img/Александров/1.jpg';
 /*  Боголюбово  */
-import bogolubovo_tour_1 from './assets/img/Боголюбово/1.jpg';
+import bogolubovo_tour_1 from '../assets/img/Боголюбово/1.jpg';
 /*  Гороховец  */
-import gorohovec_tour_1 from './assets/img/Гороховец/1.jpg';
+import gorohovec_tour_1 from '../assets/img/Гороховец/1.jpg';
 /*  Гусь Хрустальный  */
-import goos_tour_1 from './assets/img/Гусь_Хрустальный/1.jpeg';
+import goos_tour_1 from '../assets/img/Гусь_Хрустальный/1.jpeg';
 /*  Иваново  */
-import ivanovo_tour_1 from './assets/img/Иваново/1.jpg';
+import ivanovo_tour_1 from '../assets/img/Иваново/1.jpg';
 /*  Калязин  */
-import kaliazin_tour_1 from './assets/img/Калязин/1.jpg';
+import kaliazin_tour_1 from '../assets/img/Калязин/1.jpg';
 /*  Кидекша  */
-import kidekha_tour_1 from './assets/img/Кидекша/1.jpeg';   
+import kidekha_tour_1 from '../assets/img/Кидекша/1.jpeg';   
 /*  Кострома  */
-import kostrama_tour_1 from './assets/img/Кострома/1.jpeg';   
+import kostrama_tour_1 from '../assets/img/Кострома/1.jpeg';   
 /*  Москва  */
-import moskva_tour_1 from './assets/img/Москва/1.jpg';
+import moskva_tour_1 from '../assets/img/Москва/1.jpg';
 /*  Переславль-Залевский  */
-import pereslav_tour_1 from './assets/img/Переславль_Залевский/1.jpg';
+import pereslav_tour_1 from '../assets/img/Переславль_Залевский/1.jpg';
 /*  Плёс  */
-import ples_tour_1 from './assets/img/Плёс/1.jpg';    
+import ples_tour_1 from '../assets/img/Плёс/1.jpg';    
 /*  Ростов Великий  */
-import rostov_velikii_tour_1 from './assets/img/Ростов_Великий/1.jpg';
+import rostov_velikii_tour_1 from '../assets/img/Ростов_Великий/1.jpg';
 /*  Рыбинск  */
-import ribinsk_tour_1 from './assets/img/Рыбинск/1.jpg';
+import ribinsk_tour_1 from '../assets/img/Рыбинск/1.jpg';
 /*  Сергиев Посад  */
-import sergeev_posad_tour_1 from './assets/img/Сергиев_Посад/1.jpg';
+import sergeev_posad_tour_1 from '../assets/img/Сергиев_Посад/1.jpg';
 /*  Углич  */
-import yglich_tour_1 from './assets/img/Углич/1.jpg';
+import yglich_tour_1 from '../assets/img/Углич/1.jpg';
 /*  Юрьев-Польский  */
-import uyriev_polskiy_tour_1 from './assets/img/Юрьев_Польский/1.jpg';
+import uyriev_polskiy_tour_1 from '../assets/img/Юрьев_Польский/1.jpg';
 /*  Ярославль  */
-import yaroslavl_tour_1 from './assets/img/Ярославль/1.png';
+import yaroslavl_tour_1 from '../assets/img/Ярославль/1.png';
 
 function Home() {
 

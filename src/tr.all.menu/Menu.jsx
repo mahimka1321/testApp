@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './menu.scss'
+
 function NewTour() {
     return (
         <div className="opBox opBoxOne">

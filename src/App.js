@@ -1,10 +1,12 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route, Routes} from 'react-router-dom'
-import Home from './Home';
-import InfoTour from './InfoTour';
-import ShopTour from './ShopTour';
+import Home from './tr.home/Home';
+import InfoTour from './tr.info/InfoTour';
+import ShopTour from './tr.shop/ShopTour';
 
 import ScrollToTop from './ScrollToTop';
+
+import './repeadCode.css'
 
 function App() {
     return (

@@ -1,6 +1,8 @@
 import React from 'react';
-import Aleks from './assets/img/Александров/1.jpg';
-import './infoTour.scss';
+
+import './comments.scss'
+
+import Aleks from '../assets/img/Александров/1.jpg';
 
 function Comments() {
 

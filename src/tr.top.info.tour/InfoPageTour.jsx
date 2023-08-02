@@ -1,35 +1,110 @@
 import React from 'react';
-import Header from './Header';
-import WrapperTour from './WrapperTour';
-import Hoocks from './Hoocks';
-import Menu from './Menu';
 import { Link } from 'react-router-dom';
 
+import './infoPageTour.scss'
 
-import './infoTour.scss';
-import Aleks from './assets/img/Александров/1.jpg';
-function InfoTour() {
+import Aleks1 from '../assets/img/Александров/1.jpg';
+import Aleks2 from '../assets/img/Александров/2.jpg';
+import Aleks3 from '../assets/img/Александров/3.jpg';
+import Aleks4 from '../assets/img/Александров/4.jpg';
+import Aleks5 from '../assets/img/Александров/5.jpg';
 
-    const {
-        numTheme,setNumTheme,search_active, rorp
-    }= Hoocks();
+
+function InfoPageTour() {
+
+const [imgA, setImgA] = React.useState(Aleks1)
+
+function img_A_1() {
+        setImgA(Aleks1);
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        img_Ac_1.style.background = '#23A6FF'
+
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_2.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+
+    }
+
+function img_A_2() {
+        setImgA(Aleks2);
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        img_Ac_2.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+    }
+
+function img_A_3() {
+        setImgA(Aleks3);
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        img_Ac_3.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_2.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+    }
+
+function img_A_4() {
+        setImgA(Aleks4);
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        img_Ac_4.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_2.style.background = '#F4F4FF'
+        img_Ac_5.style.background = '#F4F4FF'
+    }
+
+function img_A_5() {
+        setImgA(Aleks5);
+        let img_Ac_5 = document.getElementById('img_Ac_5'); 
+        img_Ac_5.style.background = '#23A6FF'
+
+        let img_Ac_1 = document.getElementById('img_Ac_1'); 
+        let img_Ac_3 = document.getElementById('img_Ac_3'); 
+        let img_Ac_4 = document.getElementById('img_Ac_4'); 
+        let img_Ac_2 = document.getElementById('img_Ac_2'); 
+        img_Ac_1.style.background = '#F4F4FF'
+        img_Ac_3.style.background = '#F4F4FF'
+        img_Ac_4.style.background = '#F4F4FF'
+        img_Ac_2.style.background = '#F4F4FF'
+    }
 
     return (
-        <div className='bgb'>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
-            <div className="opMbox">
-                <Menu/>
-            <div className='info__page_tour'
-            style={{
-                position:'relative',
-                zIndex:'2'
-            }}>
+        <>
             <div className='top__info_tour'>
                 <div className='slider__tour_info'>
-                    <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={Aleks}/>
+                    <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={imgA}/>
+                    <div className='__slider_swap'>
+                        <span onClick={img_A_1} id='img_Ac_1'></span>
+                        <span onClick={img_A_2} id='img_Ac_2'></span>
+                        <span onClick={img_A_3} id='img_Ac_3'></span>
+                        <span onClick={img_A_4} id='img_Ac_4'></span>
+                        <span onClick={img_A_5} id='img_Ac_5'></span>
+                    </div>
                 </div>
                 <div className='container__wrapper_info'>
-                    <h1 style={{display:'block',wordWrap: 'break-word'}}>Александров</h1>
+                    <h1 style={{display:'block',wordWrap: 'break-word'}}>Александров - Семейный тур</h1>
                     <div className='status__tour'>
                         <p className='star_'>
                             <span>
@@ -39,7 +114,7 @@ function InfoTour() {
                             </span>
                             4.9
                         </p>
-                        <p className='routes_'>345 маршрутов</p>
+                        <p className='routes_'>7 маршрутов</p>
                     </div>
                     <div className="global__info_tour">
                         <p>
@@ -77,7 +152,7 @@ function InfoTour() {
                                     <path d="M11.7225 10.3541C11.7535 10.6173 11.9397 10.7818 12.1879 10.7818C12.219 10.7818 12.219 10.7818 12.25 10.7818C12.4982 10.7489 12.6844 10.5186 12.6534 10.2225L12.3741 7.62374C12.3431 7.36057 12.1259 7.1632 11.8466 7.19609C11.5984 7.22899 11.4122 7.45926 11.4432 7.75533L11.7225 10.3541Z"/>
                                 </svg>
                             </span> 
-                            932 424 шагов
+                            93 424 шагов
                         </p>
                         <p>
                             <span>
@@ -92,7 +167,7 @@ function InfoTour() {
                                     <path d="M23.1564 5.5006C22.3435 5.5006 21.6974 4.81852 21.6974 3.96041C21.6974 3.10231 22.3435 2.42023 23.1564 2.42023C23.9692 2.42023 24.6154 3.10231 24.6154 3.96041C24.6154 4.81852 23.9692 5.5006 23.1564 5.5006ZM23.1564 3.30033C22.802 3.30033 22.5311 3.58637 22.5311 3.96041C22.5311 4.33446 22.802 4.62049 23.1564 4.62049C23.5107 4.62049 23.7817 4.33446 23.7817 3.96041C23.7817 3.58637 23.5107 3.30033 23.1564 3.30033Z"/>
                                 </svg>
                             </span> 
-                            345 маршрутов
+                            7 маршрутов
                         </p>
                         <p>
                             <span>
@@ -101,7 +176,7 @@ function InfoTour() {
                                     <path d="M23 9.5C23 14.7467 18.7467 19 13.5 19C8.25329 19 4 14.7467 4 9.5C4 4.25329 8.25329 0 13.5 0C18.7467 0 23 4.25329 23 9.5ZM4.95 9.5C4.95 14.222 8.77797 18.05 13.5 18.05C18.222 18.05 22.05 14.222 22.05 9.5C22.05 4.77797 18.222 0.95 13.5 0.95C8.77797 0.95 4.95 4.77797 4.95 9.5Z"/>
                                 </svg>
                             </span> 
-                            988 ч
+                            9 ч
                         </p>
                         <p>
                             <span>
@@ -109,33 +184,23 @@ function InfoTour() {
                                     <path d="M8.02083 4.13906C7.48573 4.13906 7.0274 3.93576 6.64583 3.53037C6.4615 3.34135 6.31557 3.11421 6.21703 2.86296C6.1185 2.61172 6.06945 2.34169 6.07292 2.06953C6.07292 1.50102 6.26427 1.01407 6.64583 0.608685C7.0274 0.202083 7.48573 0 8.02083 0C8.55594 0 9.01427 0.202083 9.39583 0.608685C9.7774 1.01407 9.96875 1.50102 9.96875 2.06953C9.96875 2.63682 9.7774 3.12377 9.39583 3.53037C9.01427 3.93576 8.55594 4.13906 8.02083 4.13906ZM2.01845 25.1996C1.65365 25.1996 1.37798 24.8691 1.44344 24.5102L4.18758 9.46433C4.33153 8.67507 3.53418 8.04615 2.80016 8.36998L1.74219 8.83674C1.37972 8.99665 1.14583 9.35548 1.14583 9.75166V12.4529C1.14583 12.7694 0.88933 13.0259 0.572917 13.0259C0.256503 13.0259 0 12.7694 0 12.4529V8.93276C0 8.53514 0.235565 8.1753 0.599982 8.01625L5.29948 5.96511C5.8151 5.74112 6.29292 5.68512 6.73177 5.79712C7.17062 5.90911 7.51437 6.18789 7.76302 6.63467L8.88021 8.58246C9.37635 9.43462 10.0547 10.1553 10.9141 10.7433C11.615 11.2229 12.373 11.534 13.1883 11.6767C13.5033 11.7318 13.75 11.9942 13.75 12.314C13.75 12.667 13.4518 12.9499 13.1027 12.8975C12.014 12.7341 11.0453 12.3255 10.1979 11.6709C9.91819 11.458 9.65034 11.2292 9.39547 10.9857C8.72575 10.3459 7.41941 10.6173 7.25355 11.5286L6.82285 13.895C6.76562 14.2094 6.86214 14.5323 7.08257 14.7637L8.89078 16.6622C9.06788 16.8482 9.16667 17.0951 9.16667 17.3519V24.6266C9.16667 24.9431 8.91016 25.1996 8.59375 25.1996C8.27734 25.1996 8.02083 24.9431 8.02083 24.6266V18.7029C8.02083 18.439 7.91656 18.1859 7.73073 17.9986L5.97395 16.2278C5.41372 15.6632 4.45041 15.9469 4.28572 16.7251L2.59028 24.7361C2.5331 25.0063 2.29461 25.1996 2.01845 25.1996ZM17.1875 25.443C16.9027 25.443 16.6719 25.2122 16.6719 24.9274V9.39985C16.6719 8.84757 16.2242 8.39985 15.6719 8.39985H13.375C12.8227 8.39985 12.375 7.95214 12.375 7.39985V1.60868C12.375 1.0564 12.8227 0.608685 13.375 0.608685H21C21.5523 0.608685 22 1.0564 22 1.60869V7.39985C22 7.95214 21.5523 8.39985 21 8.39985H18.7031C18.1508 8.39985 17.7031 8.84757 17.7031 9.39985V24.9274C17.7031 25.2122 17.4723 25.443 17.1875 25.443ZM17.4093 6.56601C17.6152 6.78476 17.9629 6.78476 18.1688 6.56601L19.4643 5.18966C19.8267 4.8046 19.8267 4.20394 19.4643 3.81888L18.1688 2.44253C17.9629 2.22378 17.6152 2.22378 17.4093 2.44253L17.3876 2.46561C17.2108 2.65344 17.2108 2.94646 17.3876 3.13429C17.6806 3.4456 17.4599 3.95645 17.0324 3.95645H14.6416C14.339 3.95645 14.0937 4.20172 14.0937 4.50427C14.0937 4.80682 14.339 5.05209 14.6416 5.05209H17.0324C17.4599 5.05209 17.6806 5.56294 17.3876 5.87425C17.2108 6.06208 17.2108 6.35509 17.3876 6.54293L17.4093 6.56601Z"/>
                                 </svg>
                             </span> 
-                            132 км
+                            12 км
+                        </p>
+                        <p>
+                            <samp style={{marginTop: '0', marginRight: '5px'}}>
+                            <svg width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.41667 0.871826H26.5833C27.6448 0.871826 28.5 1.72513 28.5 2.76176V19.4913C28.5 20.528 27.6448 21.3813 26.5833 21.3813H2.41667C1.35524 21.3813 0.5 20.528 0.5 19.4913V2.76176C0.5 1.72513 1.35524 0.871826 2.41667 0.871826Z" stroke="#23A6FF"/>
+                                <path d="M24.875 7.89628V14.324C23.1558 14.7326 21.7968 16.0737 21.3808 17.7799H7.61916C7.20322 16.0737 5.84419 14.7326 4.125 14.324V7.89628C5.84419 7.48765 7.20322 6.14658 7.61916 4.44031H21.3808C21.7968 6.14658 23.1558 7.48765 24.875 7.89628Z" stroke="#23A6FF"/>
+                                <path d="M18.8334 11.1101C18.8334 13.4686 16.8986 15.39 14.5001 15.39C12.1016 15.39 10.1667 13.4686 10.1667 11.1101C10.1667 8.7516 12.1016 6.8302 14.5001 6.8302C16.8986 6.8302 18.8334 8.7516 18.8334 11.1101Z" stroke="#23A6FF"/>
+                            </svg>
+                            </samp> 
+                            799 р
                         </p>
                     </div>
                 </div>
             </div>
-            <div className='menu_controls'>
-                    <button className='btn__menu_controls controls__btn_active'>по цене 🠝</button>
-                    <button className='btn__menu_controls'>по цене 🠟</button>
-                    <button className='btn__menu_controls'>по кол-во 🠝</button>
-                    <button className='btn__menu_controls'>по кол-во 🠟</button>
-                    <button className='btn__menu_controls'>по рейтингу 🠝</button>
-                    <button className='btn__menu_controls'>по рейтингу 🠟</button>
-            </div>
-            <div className='containet__wrapper_in-tour'>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-            </div>
-            </div>
-            <div className="opBox opBoxTwoo"></div>
-            </div>
-        </div>
+        </>
     );
 }
 
-export default InfoTour;
+export default InfoPageTour;

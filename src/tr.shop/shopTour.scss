@@ -1,0 +1,340 @@
+.bgb
+{  
+    display: block;
+    width: 100%;
+    max-height: 13500px;
+    min-height: 200px;
+    height: 100%;
+    background: var(--colWhite_400);
+}
+
+.info__page_tour
+{
+    padding-top: 70px;
+    width: 1000px;
+    height: 100vh;
+    background: var(--colWhite_400);
+    box-shadow: 0px 0px 15px 0px var(--BH);
+    i 
+    {
+        position: absolute;
+        left: -15px;
+        width: 200px;
+        height: 30px;
+        border-radius: 40px;
+        background: var(--colorBlue200);
+        margin-top: 30px;
+        z-index: 1;
+        border-bottom-left-radius: 0;
+        animation: hjgjhg  0.7s linear;
+        animation-fill-mode: forwards;
+        @keyframes hjgjhg 
+        {
+            0%
+            {
+                width: 0px;
+                opacity: 0;
+            }  
+            30%
+            {
+                width: 0px;
+            }           
+            100%
+            {
+                width: 200px;
+                opacity: 1;
+            }
+        }
+        a 
+        {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #F4F4FF;
+            animation: vvbvbv  0.7s linear;
+            animation-fill-mode: forwards;
+            
+        }
+        @keyframes vvbvbv 
+        {
+            0%
+            {
+                font-size: 0px;
+                opacity: 0;
+            }    
+            30%
+            {
+                opacity: 0;
+            }            
+            100%
+            {
+                font-size: 14px;
+                opacity: 1;
+            }
+        }
+        &::before
+        {
+            content: "";
+            left: 15px;
+            position: absolute;
+            top: 30px;
+            width: 0px;
+            height: 20px;
+            background: rgb(34, 121, 202);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            animation: ereter  0.3s linear;
+            animation-fill-mode: forwards;
+            z-index: 2;
+        }
+        @keyframes ereter 
+        {
+            0%
+            {
+                left: 16px;
+                width: 0px;
+            }             
+            100%
+            {
+                left: 0px;
+                width: 15px;
+            }
+        }
+        &::after
+        {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 15px;
+            height: 25px;
+            background: var(--colorBlue200);
+            animation: rtrt  0.3s linear;
+            animation-fill-mode: forwards;
+        }
+        @keyframes rtrt 
+        {
+            0%
+            {
+                left: 16px;
+                width: 0px;
+            }             
+            100%
+            {
+                left: 0px;
+                width: 15px;
+            }
+        }
+    }
+}
+
+.sh_op{
+
+    min-height: unset;
+    height: unset;
+    max-height: unset;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.containet__wrapper_in-tour
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    .popopo 
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background: var(--colWhite_400);
+        transition: .5s;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover
+        {
+            background: var(--colorBlue200);
+            transition: .8s;
+            color: #F4F4FF;
+        }
+        img 
+        {
+            width: 35px;
+            height: 35px;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+        div
+        {
+            display: block; 
+            height: 35px;
+            margin-left: 10px;
+            color: var(--colDarck);
+            font-size: 14px;
+            h5
+            {                
+                font-weight: 300;
+            }
+            h4
+            {
+                font-weight: 400;
+            }
+        }
+        .star_
+        {
+            width: 50px;
+            height: 22px;
+            border: 1px solid var(--colBlueBtn);
+            background: var(--colWhiteBtn);
+            color: var(--colDarck);
+            margin-left: 100px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 400;
+            span 
+            {
+                margin-right: 5px;
+            }
+        }
+        .__nopius
+        {
+            width: 100px;
+            height: 22px;
+            border: 1px solid var(--colBlueBtn);
+            background: var(--colWhiteBtn);
+            color: var(--colDarck);
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.about__us_tour
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    h1 
+    {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--colorBlue200);
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    p 
+    {
+        font-size: 16px;
+        line-height: 24px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--colDarck);
+    }
+}
+.map__info_tour
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    h1 
+    {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--colorBlue200);
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    div 
+    {
+        display: flex;
+        iframe 
+        {
+            border-radius: 8px;
+            border: 1px solid #616161;
+        }
+        p 
+        {
+            display: flex;
+            max-width: 330px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--colDarck);
+            span 
+            {
+                display: block;
+                width: 15px;
+                border-radius: 8px;
+                height: 80px;
+                background: #EE4C46;
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.city__info_tour
+{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    h1 
+    {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--colorBlue200);
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    p 
+    {
+        color: var(--colDarck);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+    div 
+    {
+        display: flex;
+        margin-top: 20px;
+        a 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 35px;
+            border-radius: 8px;
+            background: #23A6FF;
+            color: #F4F4FF;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        p 
+        {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            height: 35px;
+            color: #23A6FF;
+        }
+    }
+}
