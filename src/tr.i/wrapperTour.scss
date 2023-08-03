@@ -17,11 +17,6 @@
     max-height: unset;      
     min-height: 50px;
     height: unset;
-
-
-
-
-    padding: 20px 0 20px 0;
     &:hover
     {
         background: var(--colorBlue200);
@@ -118,18 +113,6 @@
     flex-wrap: wrap;
 }
 
-
-
-@media screen and (max-width: 400px) 
-{
-    .fdfd
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
 @media screen and (max-width: 660px) 
 {
     .popopo 
@@ -143,5 +126,22 @@
         {
             margin-top: 5px;
         }
+    }
+}
+
+@media screen and (max-width: 565px) 
+{
+    .popopo 
+    {
+        padding: 20px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 400px) 
+{
+    .fdfd
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
