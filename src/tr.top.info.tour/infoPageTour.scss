@@ -222,6 +222,20 @@
         }
     }
     
+    @media screen and (max-width: 815px) 
+    {
+        .top__info_tour
+        {
+            .container__wrapper_info
+            {
+                .global__info_tour
+                {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
     
     
     @media screen and (max-width: 768px) 
@@ -251,11 +265,6 @@
                     font-size: 24px;
                     font-weight: 500;
                     //margin-top: 24px;
-                }
-                .global__info_tour
-                {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
                 }
             }
         }
