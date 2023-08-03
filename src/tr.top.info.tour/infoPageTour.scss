@@ -127,3 +127,32 @@
         }
     }
 }
+
+
+@media screen and (max-width: 425px) 
+{
+    .top__info_tour
+    {
+        display: block;
+        .slider__tour_info
+        {
+            img
+            {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+        }
+        .container__wrapper_info
+        {
+            width: auto;
+            margin-left: 0px;
+            h1
+            {
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+        }
+    }
+}
