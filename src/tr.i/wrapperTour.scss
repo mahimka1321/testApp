@@ -1,0 +1,119 @@
+%rep-cl-sh-t 
+{
+    display: flex;
+    align-items: center;
+}  
+
+.popopo 
+{
+    @extend %rep-cl-sh-t;
+    height: 50px;
+    background: var(--colWhite_400);
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;      
+    max-height: unset;      
+    min-height: 50px;
+    height: unset;
+
+
+
+
+    padding: 20px 0 20px 0;
+    &:hover
+    {
+        background: var(--colorBlue200);
+        transition: .8s;
+        color: #F4F4FF;
+    }
+    img 
+    {
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+    .name_tour_
+    {
+        display: block; 
+        height: 35px;
+        margin-left: 10px;
+        color: var(--colDarck);
+        font-size: 14px;        
+        h5
+        {                
+            font-weight: 300;
+        }
+        h4
+        {
+            font-weight: 400;
+        }
+    }
+    .star_
+    {
+        @extend %rep-cl-sh-t;
+        width: 50px;
+        height: 22px;
+        border: 1px solid var(--colBlueBtn);
+        background: var(--colWhiteBtn);
+        color: var(--colDarck);
+        margin-left: 10px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        span 
+        {
+            margin-right: 5px;
+        }
+    }
+    .__nopius
+    {
+        @extend %rep-cl-sh-t;
+        width: 100px;
+        height: 22px;
+        border: 1px solid var(--colBlueBtn);
+        background: var(--colWhiteBtn);
+        color: var(--colDarck);
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 20px;
+        justify-content: center;
+    }
+}
+
+.popopo:hover > div > h4
+{
+    color: #F4F4FF;
+    transition: .3s ;
+}
+
+.popopo:hover > div > h5
+{
+    color: #F4F4FF;
+    transition: .3s ;
+}
+
+
+
+
+
+.fdfd
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dfdsd
+{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

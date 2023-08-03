@@ -1,8 +1,22 @@
+%rep-cl-sh-t 
+{
+    display: flex;
+    align-items: center;
+}  
+%rep-cl-sh-t-f
+{
+    font-size: 12px;
+    font-weight: 400;
+}
+
 .top__info_tour
 {
     display: flex;
     margin:  0 auto;
     justify-content: center;
+
+    margin-left: 20px;
+    margin-right: 20px;
     .slider__tour_info
     {
         img
@@ -54,17 +68,15 @@
             display: flex;
             .star_
             {
+                @extend %rep-cl-sh-t;
+                @extend %rep-cl-sh-t-f;
                 width: 50px;
                 height: 22px;
                 background: var(--colorBlue200);
                 color: #F4F4FF;
-                display: flex;
                 text-align: center;
-                align-items: center;
                 justify-content: center;
                 border-radius: 5px;
-                font-size: 12px;
-                font-weight: 400;
                 span 
                 {
                     margin-right: 5px;
@@ -72,17 +84,15 @@
             }
             .routes_
             {
+                @extend %rep-cl-sh-t;
+                @extend %rep-cl-sh-t-f;
                 width: 100px;
                 height: 22px;
                 background: var(--colorBlue200);
                 color: #F4F4FF;
-                display: flex;
                 text-align: center;
-                align-items: center;
                 justify-content: center;
                 border-radius: 5px;
-                font-size: 12px;
-                font-weight: 400;
             }
             .routes_:last-child
             {
@@ -95,17 +105,14 @@
             grid-template-columns: 1fr 1fr 1fr;
             p
             {
+                @extend %rep-cl-sh-t;
+                @extend %rep-cl-sh-t-f;
                 color: var(--colorBlue200);
-                font-size: 12px;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
                 height: 25px;
                 margin-top: 10px;
                 span 
                 {
-                    display: flex;
-                    align-items: center;
+                    @extend %rep-cl-sh-t;
                     height: 25px;
                     margin-right: 5px;
                     svg

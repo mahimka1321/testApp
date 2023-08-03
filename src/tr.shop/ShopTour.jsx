@@ -1,21 +1,20 @@
 import React from 'react';
-import Header from '../tr.all.header/Header';
-import WrapperTour from '../tr.i/WrapperTour';
-import Hoocks from '../Hoocks';
 import { Link } from 'react-router-dom';
+
+import Header from '../tr.all.header/Header';
 import Menu from '../tr.all.menu/Menu';
 import Comments from '../tr.comments/Comments';
 import InfoPageTour from '../tr.top.info.tour/InfoPageTour';
 
+import Hoocks from '../Hoocks';
 import './shopTour.scss'
-
 
 import Aleks from '../assets/img/Александров/1.jpg';
 
 function ShopTour() {
 
     const {
-        numTheme,setNumTheme,search_active, rorp
+        numTheme,setNumTheme,search_active
     }= Hoocks();
 
     return (
@@ -24,7 +23,7 @@ function ShopTour() {
             <div className="opMbox">
                 <Menu/>
                 <div>
-                    <div className='info__page_tour sh_op'
+                    <div className='info__page_tour sh_op cl__container-size'
                         style={{
                             position:'relative',
                             zIndex:'2'
@@ -57,7 +56,7 @@ function ShopTour() {
                         <div className='map__info_tour'>
                             <h1>Область посещения</h1>
                             <div>
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43c6b160edf8bde304bf9f5a2e192689329022d48f6730c86dc07f36d45aceb&amp;source=constructor" width="400" height="280" frameborder="0"></iframe>
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af43c6b160edf8bde304bf9f5a2e192689329022d48f6730c86dc07f36d45aceb&amp;source=constructor" width="400" height="280" frameBorder="0"></iframe>
                                 <p><span></span>Красным маркером показанна зона которая будет посещена во время прохождения тура</p>
                             </div>
                         </div>
@@ -82,7 +81,7 @@ function ShopTour() {
                             </div>
                         </div>
                     </div>
-                    <div className='container__comments'>
+                    <div className='container__comments cl__container-size'>
                         <h1 className='name__comments_container'>Комментарии</h1>
                         <Comments />
                         <Comments />
