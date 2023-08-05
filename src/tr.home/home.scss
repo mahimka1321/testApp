@@ -44,6 +44,7 @@ html,body
 
             display: grid;
             align-items: center;
+            content-visibility: auto;
 
             //padding-bottom: 50px;
             h2
@@ -89,6 +90,8 @@ html,body
             border-radius: 8px;
             background: var(--colWhite_400);
             box-shadow: 0px 0px 15px 0px var(--BH);
+
+            content-visibility: auto;
             h2
             {
                 font-weight: 500;
