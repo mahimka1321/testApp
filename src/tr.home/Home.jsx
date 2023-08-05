@@ -66,7 +66,7 @@ const {
                 <div className='cntainer_content'
                 style={{
                     position:'relative',
-                    zIndex:'2'
+                    zIndex:'2',
                 }}>
                     <div className='container__new_tours'>
                         <h2>Новые туры</h2>
@@ -227,7 +227,13 @@ const {
                     </div>
                     <div className='containet__box_tours'>
                         <h2>Наши туры</h2>
-                        <div style={{textAlign:'center'}} className="container__control_tour">
+                        <div 
+                        style={{
+                            textAlign:'center',                    
+                            paddingBottom: '80px',
+                        }} 
+                        className="container__control_tour"
+                        >
                             {/*  Владимир  */}
                             <Tour 
                                 imgTour={vladimir_tour_1}

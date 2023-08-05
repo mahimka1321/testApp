@@ -81,7 +81,10 @@ function ShopTour() {
                             </div>
                         </div>
                     </div>
-                    <div className='container__comments cl__container-size'>
+                    <div className='container__comments cl__container-size'
+                        style={{
+                            paddingBottom: '80px'
+                        }}>
                         <h1 className='name__comments_container'>Комментарии</h1>
                         <Comments />
                         <Comments />
