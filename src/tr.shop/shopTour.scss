@@ -337,7 +337,17 @@
 
 .sh_t__
 {
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: var(--colDarck);
+    h4 
+    {
+        font-weight: 400;
+    }
+    h5 
+    {
+        font-weight: 300;
+    }
 }
 
 .sh_popo__

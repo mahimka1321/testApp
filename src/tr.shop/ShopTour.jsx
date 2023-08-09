@@ -32,7 +32,7 @@ function ShopTour() {
                             <InfoPageTour />
                             <i><Link to='/info-tour'>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
-                            <Link to='' className='popopo' style={{marginLeft:'20px'}}>
+                            <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Введение</h4>
