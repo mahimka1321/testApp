@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './wrapperTour.scss'
 
-import Aleks from '../assets/img/Александров/1.jpg';
+import Aleks from '../assets/img/Александров/1.webp';
 
 
 function WrapperTour(props) {

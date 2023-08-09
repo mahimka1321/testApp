@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 import './infoPageTour.scss'
 
-import Aleks1 from '../assets/img/Александров/1.jpg';
-import Aleks2 from '../assets/img/Александров/2.jpg';
-import Aleks3 from '../assets/img/Александров/3.jpg';
-import Aleks4 from '../assets/img/Александров/4.jpg';
-import Aleks5 from '../assets/img/Александров/5.jpg';
+import Aleks1 from '../assets/img/Александров/1.webp';
+import Aleks2 from '../assets/img/Александров/2.webp';
+import Aleks3 from '../assets/img/Александров/3.webp';
+import Aleks4 from '../assets/img/Александров/4.webp';
+import Aleks5 from '../assets/img/Александров/5.webp';
 
 
 function InfoPageTour() {

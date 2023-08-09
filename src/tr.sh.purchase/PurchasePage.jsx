@@ -6,7 +6,7 @@ import Hoocks from "../Hoocks";
 
 import './purchasePage.scss';
 
-import Aleks_1 from "../assets/img/Александров/1.jpg";
+import Aleks_1 from "../assets/img/Александров/1.webp";
 function PurchasePage() {
 
     const [priceTout, usePriceTour] = useState(799);

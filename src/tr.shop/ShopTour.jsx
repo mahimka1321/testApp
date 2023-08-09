@@ -9,7 +9,7 @@ import InfoPageTour from '../tr.top.info.tour/InfoPageTour';
 import Hoocks from '../Hoocks';
 import './shopTour.scss'
 
-import Aleks from '../assets/img/Александров/1.jpg';
+import Aleks from '../assets/img/Александров/1.webp';
 
 function ShopTour() {
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './comments.scss'
 
-import Aleks from '../assets/img/Александров/1.jpg';
+import Aleks from '../assets/img/Александров/1.webp';
 
 function Comments() {
 
