@@ -144,6 +144,37 @@
     }
 }
 
+
+@media screen and (max-width: 1000px) 
+{
+    .info__page_tour
+    {
+        i 
+        {
+            animation: hjgjhg  none;
+            animation-fill-mode: none;
+            a 
+            {
+                animation: vvbvbv  none;
+                animation-fill-mode: none;
+                
+            }
+            &::before
+            {
+                animation: ereter  none;
+                animation-fill-mode: none;
+                z-index: 2;
+            }
+            &::after
+            {
+                animation: rtrt  none;
+                animation-fill-mode: none;
+            }
+        }
+    }
+}
+
+
 .sh_op{
 
     min-height: unset;
