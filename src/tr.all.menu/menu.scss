@@ -172,6 +172,7 @@
     background: transparent;
     border-top-right-radius: 19px;
     box-shadow: 1px -10px 0 0 var(--colWhite_400);
+    transition: 0.4s;
 }
 
 .indicator::after
@@ -185,6 +186,7 @@
     background: transparent;
     border-top-left-radius: 19px;
     box-shadow: -1px -10px 0 0 var(--colWhite_400);
+    transition: 0.4s;
 }
 
 .navigation ul li:nth-child(1).active  ~ .indicator
