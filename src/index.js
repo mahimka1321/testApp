@@ -4,8 +4,26 @@ import {BrowserRouter} from 'react-router-dom'
 
 import App from './App';
 
-import './on.css';
+import './main.min.css';
+import './repeadCode.css'
 import './color.css';
+
+
+(() => {
+    'use strict';
+    const objects = document.getElementsByClassName('asyncImage');
+    Array.from(objects).map((item) => {
+        const img = new Image();
+        img.src = item.dataset.src;
+        img.onload = () => {
+            item.classList.remove('asyncImage');
+            return item.nodeName === 'IMG' ? 
+                item.src = item.dataset.src :        
+                item.style.backgroundImage = `url(${item.dataset.src})`;
+        };
+    });
+})();
+
 
 const root = ReactDOMClient.createRoot(
     document.getElementById('root'));

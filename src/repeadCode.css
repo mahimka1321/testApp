@@ -4,3 +4,8 @@
     min-width: 200px;
     width: 100%;
 }
+
+._tr__on_t
+{
+    transition: 0s;
+}

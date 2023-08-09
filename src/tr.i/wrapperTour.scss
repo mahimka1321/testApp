@@ -9,7 +9,6 @@
     @extend %rep-cl-sh-t;
     height: 50px;
     background: var(--colWhite_400);
-    transition: .5s;
     cursor: pointer;
     text-decoration: none;
 
@@ -22,7 +21,6 @@
     &:hover
     {
         background: var(--colorBlue200);
-        transition: .8s;
         color: #F4F4FF;
     }
     img 
@@ -40,6 +38,7 @@
         color: var(--colDarck);
         font-size: 14px;     
         text-align: left;   
+        transition: 0s;
         h5
         {                
             font-weight: 300;
@@ -82,19 +81,14 @@
         margin-left: 5px;
         justify-content: center;
     }
+    &:hover  .name_tour_ 
+    {
+        transition: 0s;
+        color: #F4F4FF;
+    }
 }
 
-.popopo:hover > div > h4
-{
-    color: #F4F4FF;
-    transition: .3s ;
-}
 
-.popopo:hover > div > h5
-{
-    color: #F4F4FF;
-    transition: .3s ;
-}
 
 
 

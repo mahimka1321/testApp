@@ -10,7 +10,6 @@
     border-radius: 8px;
     background: var(--colorBlue200);
 
-    transition: .3s;
     will-change: transform;
     text-decoration: none;
 
@@ -31,7 +30,6 @@
                 height: 170px;
                 border-radius: 8px 8px 0px 0px; 
 
-                transition: 0.3s;
             }
             h1
             {
@@ -41,7 +39,7 @@
                 font-size: 18px;
                 font-weight: 500;
                 color: #F4F4FF;
-
+                transition: 0s;
                 position: relative;
             }
         }
@@ -67,11 +65,13 @@
                 font-size: 12px;
                 font-weight: 400;
                 margin-top: 11px;
+                transition: 0s;
                 svg
                 {
                     path 
                     {
                         fill: var(--colWhite_400);
+                        transition: 0s;
                     }
                 }
             }
@@ -91,14 +91,12 @@
     &:hover
     {
         transform: scale(1.02);
-        transition: 0.3s;
 
         cursor: pointer;
     }
     &:hover .img
     {
         filter: brightness(70%);
-        transition: 0.3s;
     }
 }
 

@@ -8,8 +8,6 @@ import Profile from './tr.profile/Profile';
 import PurchasePage from './tr.sh.purchase/PurchasePage';
 import ScrollToTop from './ScrollToTop';
 
-import './repeadCode.css'
-
 function App() {
     return (
         <>

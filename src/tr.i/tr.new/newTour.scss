@@ -7,7 +7,6 @@
     border-radius: 8px;
     background: var(--colorBlue200);
 
-    transition: .3s;
     will-change: transform;
 
     display: flex;            
@@ -34,7 +33,6 @@
                 border-radius: 8px 0px 0px 8px;
                 box-shadow: 5px 0px 10px 0px var(--BH);
 
-                transition: 0.3s;
             }
             p
             {
@@ -51,6 +49,7 @@
                 border-radius: 8px;
                 color: var(--colorBlue200);
                 background: var(--colWhite_400);
+                transition: 0s;
             }
         }
     }
@@ -69,17 +68,20 @@
                 font-size: 12px;
                 font-weight: 400;
                 margin-top: 11px;
+                transition: 0s;
                 svg
                 {
                     path 
                     {
                         fill: var(--colWhite_400);
+                        transition: 0s;
                     }
                 }
                 h1
                 {
                     font-size: 16px;
                     font-weight: 500;
+                    transition: 0s;
                 }
             }
             .info__new_last
@@ -99,14 +101,13 @@
     &:hover
     {
         transform: scale(1.02);
-        transition: 0.3s;
 
         cursor: pointer;
     }
     &:hover .img
     {
         filter: brightness(70%);
-        transition: 0.3s;
+
     }
 }
 
