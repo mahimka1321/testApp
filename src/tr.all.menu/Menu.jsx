@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './menu.scss'
 
 function NewTour() {
+    
     return (
         <div className="opBox opBoxOne">
         <div className="container__menu_naw" style={{marginTop:'75px'}}>
