@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/testapp/static/css/main.e014545b.css",
-    "main.js": "/testapp/static/js/main.960856c2.js",
-    "static/media/3.webp": "/testapp/static/media/3.17807ea2b9b566ad498c.webp",
+    "main.js": "/testapp/static/js/main.5fa3e271.js",
     "static/media/1.webp": "/testapp/static/media/1.f0c5dad040d8076d780c.webp",
-    "static/media/4.webp": "/testapp/static/media/4.2c0ad2dca5f8766d55ff.webp",
-    "static/media/2.webp": "/testapp/static/media/2.41cc0e39c7887ea40081.webp",
-    "static/media/5.webp": "/testapp/static/media/5.abbdfec642de7235742e.webp",
+    "static/media/5.webp": "/testapp/static/media/5.ad1a3c7cc13ff8b2dfab.webp",
+    "static/media/4.webp": "/testapp/static/media/4.5d3bc89eb6147eb2221a.webp",
+    "static/media/2.webp": "/testapp/static/media/2.4c49c46a62d7d09194eb.webp",
+    "static/media/3.webp": "/testapp/static/media/3.dcd51752c4446b75dfc8.webp",
     "index.html": "/testapp/index.html",
     "main.e014545b.css.map": "/testapp/static/css/main.e014545b.css.map",
-    "main.960856c2.js.map": "/testapp/static/js/main.960856c2.js.map"
+    "main.5fa3e271.js.map": "/testapp/static/js/main.5fa3e271.js.map"
   },
   "entrypoints": [
     "static/css/main.e014545b.css",
-    "static/js/main.960856c2.js"
+    "static/js/main.5fa3e271.js"
   ]
 }
