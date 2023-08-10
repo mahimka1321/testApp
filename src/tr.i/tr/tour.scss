@@ -1,12 +1,12 @@
 .__tour
 {
     display: inline-grid;
-    width: 225px;
-    height: 250px;
+    width: 170px;
+    height: 220px;
     flex-shrink: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
     border-radius: 8px;
     background: var(--colorBlue200);
 
@@ -19,86 +19,104 @@
 
     .__img_tour
     {
+        cursor: pointer;
         .img_container
         {
-            height: 170px;
+            height: 120px;
             .img
             {
                 display: flex;
                 justify-content: center;
-                width: 225px;
-                height: 170px;
+                width: 170px;
+                height: 120px;
                 border-radius: 8px 8px 0px 0px; 
+                filter: brightness(70%);
 
             }
             h1
             {
                 display: flex;
-                margin-top: -35px;
+                margin-top: -30px;
                 margin-left: 15px;
+                text-align: left;
                 font-size: 18px;
-                font-weight: 500;
-                color: #F4F4FF;
+                font-weight: 400;
+                width: 125px;
+                color: #ffffff;
                 transition: 0s;
+                bottom: 15px;
                 position: relative;
             }
         }
     }
     .__info_tour
     {
-        position: relative;
-        z-index: 2;
-        top: -170px;
-        display: flex;
-        justify-content: right;
+        display: block;
+        max-width: unset;
+        min-width: unset;
+        width: unset;
+        height: 100px;
         ul
         {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-top: 170px;
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            li
+            display: block;
+            margin-top: 5px;
+            div 
             {
-                color: var(--colWhite_400);
-                font-size: 12px;
-                font-weight: 400;
-                margin-top: 11px;
-                transition: 0s;
-                svg
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-row-gap: 10px;
+                justify-content: center;
+                li
                 {
-                    path 
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    text-align: left;
+                    width: 80px;
+                    height: 22px;
+                    color: var(--colWhite_400);
+                    font-size: 12px;
+                    font-weight: 400;
+                    transition: 0s;
+                    margin-left: 5px;
+                    svg
                     {
-                        fill: var(--colWhite_400);
-                        transition: 0s;
+                        path 
+                        {
+                            fill: var(--colWhite_400);
+                            transition: 0s;
+                        }
                     }
                 }
             }
             .info__t_last
             {
-                width: 100px;
+                font-size: 12px;
+                font-weight: 400;
                 height: 22px;
+                display: flex;
+                align-items: center;
+                width: 100px;
                 border-radius: 5px;
                 color: var(--colorBlue200);
                 background: var(--colWhite_400);
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 10px;
             }
         }
     }
-    &:hover
+    &:hover .__img_tour
     {
-        transform: scale(1.02);
-
-        cursor: pointer;
-    }
-    &:hover .img
-    {
-        filter: brightness(70%);
+        .img_container
+        {
+            height: 120px;
+            .img
+            {
+                filter: brightness(40%);
+                transition: 0.3s;
+            }
+        }
     }
 }
-
-
-

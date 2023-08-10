@@ -24,7 +24,6 @@ import './color.css';
     });
 })();
 
-
 const root = ReactDOMClient.createRoot(
     document.getElementById('root'));
 root.render(

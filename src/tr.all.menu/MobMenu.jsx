@@ -19,7 +19,7 @@ function MobMenu() {
     return (
         <div className="navigation">
             <ul>  
-                <li className="list active">
+                <li className="list">
                     <Link to="/profile">
                         <span className="icon">
                             <ion-icon name="chatbubble-outline">
@@ -33,7 +33,7 @@ function MobMenu() {
                         <span className="text">Home</span>
                     </Link>
                 </li>
-                <li className="list">
+                <li className="list active">
                     <Link to="/">
                         <span className="icon">
                             <ion-icon name="camera-outline">
