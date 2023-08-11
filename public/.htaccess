@@ -6,11 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule . /index.html [L]
 
-# One year for image files
-<filesMatch ".(jpg|jpeg|png|webp|gif|ico)$">
-Header set Cache-Control "max-age=31536000, public"
-</filesMatch>
-# One month for css and js
-<filesMatch ".(css|js)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
+Cache-Control: public, max-age=604800
