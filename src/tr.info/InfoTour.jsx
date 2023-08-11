@@ -31,7 +31,7 @@ style={{
     paddingBottom: '80px',
     borderRadius: '0px 0px 8px 8px'
 }}>
-                    <InfoPageTour />
+                    <InfoPageTour title='Александров' router='7 туров' price='-'/>
                     <i className='back_btn_'><Link to='/'>Назад</Link></i>
                     <div className='menu_controls'>
                         <button className='btn__menu_controls controls__btn_active'>по цене 🠝</button>

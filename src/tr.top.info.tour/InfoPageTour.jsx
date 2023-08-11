@@ -10,7 +10,7 @@ import Aleks4 from '../assets/img/Александров/4.webp';
 import Aleks5 from '../assets/img/Александров/5.webp';
 
 
-function InfoPageTour() {
+function InfoPageTour(props) {
 
 const [imgA, setImgA] = React.useState(Aleks1)
 
@@ -104,7 +104,7 @@ function img_A_5() {
                     </div>
                 </div>
                 <div className='container__wrapper_info'>
-                    <h1 style={{display:'block',wordWrap: 'break-word'}}>Александров - Семейный тур</h1>
+                    <h1 style={{display:'block',wordWrap: 'break-word'}}>{props.title}</h1>
                     <div className='status__tour'>
                         <p className='star_'>
                             <span>
@@ -114,7 +114,6 @@ function img_A_5() {
                             </span>
                             4.9
                         </p>
-                        <p className='routes_'>7 маршрутов</p>
                     </div>
                     <div className="global__info_tour">
                         <p>
@@ -167,7 +166,7 @@ function img_A_5() {
                                     <path d="M23.1564 5.5006C22.3435 5.5006 21.6974 4.81852 21.6974 3.96041C21.6974 3.10231 22.3435 2.42023 23.1564 2.42023C23.9692 2.42023 24.6154 3.10231 24.6154 3.96041C24.6154 4.81852 23.9692 5.5006 23.1564 5.5006ZM23.1564 3.30033C22.802 3.30033 22.5311 3.58637 22.5311 3.96041C22.5311 4.33446 22.802 4.62049 23.1564 4.62049C23.5107 4.62049 23.7817 4.33446 23.7817 3.96041C23.7817 3.58637 23.5107 3.30033 23.1564 3.30033Z"/>
                                 </svg>
                             </span> 
-                            7 маршрутов
+                            {props.router}
                         </p>
                         <p>
                             <span>
@@ -194,7 +193,7 @@ function img_A_5() {
                                 <path d="M18.8334 11.1101C18.8334 13.4686 16.8986 15.39 14.5001 15.39C12.1016 15.39 10.1667 13.4686 10.1667 11.1101C10.1667 8.7516 12.1016 6.8302 14.5001 6.8302C16.8986 6.8302 18.8334 8.7516 18.8334 11.1101Z" stroke="#23A6FF"/>
                             </svg>
                             </samp> 
-                            799 р
+                            {props.price}
                         </p>
                     </div>
                 </div>

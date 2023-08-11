@@ -102,7 +102,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour'
                                 title="Суздаль" 
                                 time="16" 
-                                routes="8 маршрутов"
+                                routes="8 туров"
                             />
                             {/*  Александров  */}
                             <NewTour 
@@ -110,7 +110,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour'
                                 title="Александров" 
                                 time="11" 
-                                routes="5 маршрутов"
+                                routes="5 туров"
                             />
                             {/*  Владимир  */}
                             <NewTour 
@@ -118,7 +118,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Владимир" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Боголюбово  */}
                             <NewTour 
@@ -126,7 +126,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Боголюбово" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Гороховец  */}
                             <NewTour 
@@ -134,124 +134,12 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Гороховец" 
                                 time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Гусь Хрустальный  */}
-                            <NewTour 
-                                imgTour={goos_tour_1}
-                                tourlink='/info-tour' 
-                                title="Гусь Хрустальный" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Иваново  */}
-                            <NewTour 
-                                imgTour={ivanovo_tour_1}
-                                tourlink='/info-tour' 
-                                title="Иваново" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Калязин  */}
-                            <NewTour 
-                                imgTour={kaliazin_tour_1}
-                                tourlink='/info-tour' 
-                                title="Калязин" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Кидекша  */}
-                            <NewTour 
-                                imgTour={kidekha_tour_1}
-                                tourlink='/info-tour' 
-                                title="Кидекша" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Кострома  */}
-                            <NewTour 
-                                imgTour={kostrama_tour_1}
-                                tourlink='/info-tour' 
-                                title="Кострома" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Москва  */}
-                            <NewTour 
-                                imgTour={moskva_tour_1}
-                                tourlink='/info-tour' 
-                                title="Москва" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Переславль-Залевский  */}
-                            <NewTour 
-                                imgTour={pereslav_tour_1}
-                                tourlink='/info-tour' 
-                                title="Переславль-Залевский" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Плёс  */}
-                            <NewTour 
-                                imgTour={ples_tour_1}
-                                tourlink='/info-tour' 
-                                title="Плёс" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Ростов Великий  */}
-                            <NewTour 
-                                imgTour={rostov_velikii_tour_1}
-                                tourlink='/info-tour' 
-                                title="Ростов Великий" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Рыбинск  */}
-                            <NewTour 
-                                imgTour={ribinsk_tour_1}
-                                tourlink='/info-tour' 
-                                title="Рыбинск" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Сергиев Посад  */}
-                            <NewTour 
-                                imgTour={sergeev_posad_tour_1}
-                                tourlink='/info-tour' 
-                                title="Сергиев Посад" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Углич  */}
-                            <NewTour 
-                                imgTour={yglich_tour_1}
-                                tourlink='/info-tour' 
-                                title="Углич" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Юрьев-Польский  */}
-                            <NewTour 
-                                imgTour={uyriev_polskiy_tour_1}
-                                tourlink='/info-tour' 
-                                title="Юрьев-Польский" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Ярославль  */}
-                            <NewTour 
-                                imgTour={yaroslavl_tour_1}
-                                tourlink='/info-tour' 
-                                title="Ярославль" 
-                                time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                         </div>
                     </div>
                     <div className='containet__box_tours'>
-                        <h2>Наши туры</h2>
+                        <h2>Все туры</h2>
                         <div 
                         style={{
                             textAlign:'center',                    
@@ -265,7 +153,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Владимир" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Суздаль  */}
                             <Tour 
@@ -273,7 +161,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Суздаль" 
                                 time="16" 
-                                routes="8 маршрутов"
+                                routes="8 туров"
                             />
                             {/*  Александров  */}
                             <Tour 
@@ -281,14 +169,14 @@ React.useEffect(()=>{
                                 tourlink='info-tour'
                                 title="Александров" 
                                 time="11" 
-                                routes="5 маршрутов"
+                                routes="5 туров"
                             />
                             {/*  Боголюбово  */}
                             <Tour imgTour={bogolubovo_tour_1}
                             tourlink='/info-tour' 
                                 title="Боголюбово" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Гороховец  */}
                             <Tour 
@@ -296,7 +184,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Гороховец" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Гусь Хрустальный  */}
                             <Tour 
@@ -304,7 +192,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Гусь Хрустальный" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Иваново  */}
                             <Tour 
@@ -312,7 +200,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Иваново" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Калязин  */}
                             <Tour 
@@ -320,7 +208,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Калязин" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Кидекша  */}
                             <Tour 
@@ -328,7 +216,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Кидекша" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Кострома  */}
                             <Tour 
@@ -336,7 +224,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Кострома" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Москва  */}
                             <Tour 
@@ -344,7 +232,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Москва" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Переславль-Залевский  */}
                             <Tour 
@@ -352,7 +240,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Переславль-Залевский" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Плёс  */}
                             <Tour 
@@ -360,7 +248,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Плёс" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Ростов Великий  */}
                             <Tour 
@@ -368,7 +256,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Ростов Великий" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             /> 
                             {/*  Рыбинск  */}
                             <Tour 
@@ -376,7 +264,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Рыбинск" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             /> 
                             {/*  Сергиев Посад  */}
                             <Tour 
@@ -384,7 +272,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Сергиев Посад" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Углич  */}
                             <Tour 
@@ -392,7 +280,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Углич" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Юрьев-Польский  */}
                             <Tour 
@@ -400,7 +288,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Юрьев-Польский" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                             {/*  Ярославль  */}
                             <Tour 
@@ -408,7 +296,7 @@ React.useEffect(()=>{
                                 tourlink='/info-tour' 
                                 title="Ярославль" 
                                 time="28" 
-                                routes="14 маршрутов"
+                                routes="14 туров"
                             />
                         </div>
                     </div>

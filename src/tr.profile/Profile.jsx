@@ -66,7 +66,7 @@ const {
                     </div>
                     <div className='containet__profile-tour--content'>
                         <div className="btn__profile_controls">
-                            <button className="controls__btn_active"><Link to=''>Куленные туры</Link></button>
+                            <button className="controls__btn_active"><Link to=''>Купленные туры</Link></button>
                             <button><Link to=''>Статистика</Link></button>
                         </div>
                         <div 

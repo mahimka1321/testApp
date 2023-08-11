@@ -29,7 +29,7 @@ function ShopTour() {
                         }}
                     >
                         <div >
-                            <InfoPageTour />
+                            <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='799p'/>
                             <i className='back_btn'><Link to='/info-tour'>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                             <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
@@ -60,7 +60,7 @@ function ShopTour() {
                             <div>
                                 <Link to='/info-tour'>Назад</Link>
                                 <Link to='/purchase-tour'>Купить тур</Link>
-                                <p>После покупки ваш тур будет в вашем личном кабинете </p>
+                                <p>После покупки тур будет в вашем личном кабинете </p>
                                 <svg style={{
                                     display:'flex',
                                     height:'35px',
