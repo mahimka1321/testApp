@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../tr.all.header/Header';
 
@@ -31,6 +32,7 @@ style={{
     borderRadius: '0px 0px 8px 8px'
 }}>
                     <InfoPageTour />
+                    <i className='back_btn_'><Link to='/'>Назад</Link></i>
                     <div className='menu_controls'>
                         <button className='btn__menu_controls controls__btn_active'>по цене 🠝</button>
                         <button className='btn__menu_controls'>по цене 🠟</button>
