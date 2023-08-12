@@ -41,20 +41,18 @@ function PageRouterTour() {
                             <i className='back_btn'><Link to='/tour'>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                                 <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
-                                    <img alt='' src={Aleks}/>
-                                    <div className='sh_t__'>
-                                        <h4>Введение</h4>
-                                        <h5>Александров</h5>
+                                    <img style={{border:'1px solid #616161', filter: 'brightness(0.8)'}} alt='' src={Aleks}/>
+                                    <div className='sh_t__ op__sh_t'>
+                                        <h4>Введение - Александров </h4>
                                     </div>
                                     <div className='sh_popo__'>
-                                        <p className='__nopius'>6 мин</p>
+                                        <audio controls="controls" className='audio_tour'>
+                                            <source src={dfdfdss} type="audio/mp3" />
+                                        </audio>
                                     </div>
                                 </Link>
                             </div>
-                            <audio controls="controls">
-  <source src={dfdfdss} type="audio/mp3" />
-Your browser does not support the audio element.
-</audio>
+
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>
