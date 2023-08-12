@@ -29,7 +29,7 @@ function PageRouterTour() {
                         }}
                     >
                         <div >
-                            <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='799p'/>
+                            <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='Куплено'/>
                             <i className='back_btn'><Link to='/tour'>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                                 <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
