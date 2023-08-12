@@ -18,6 +18,8 @@ import './pageRouterTour.scss'
 
 import Aleks from '../assets/img/Александров/1.webp';
 
+import dfdfdss from '../assets/1212.mp3';
+
 function PageRouterTour() {
     const {
         numTheme,setNumTheme,search_active
@@ -49,6 +51,10 @@ function PageRouterTour() {
                                     </div>
                                 </Link>
                             </div>
+                            <audio controls="controls">
+  <source src={dfdfdss} type="audio/mp3" />
+Your browser does not support the audio element.
+</audio>
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>
