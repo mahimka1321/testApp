@@ -6,7 +6,6 @@
   "dependencies": {
     "@babel/core": "^7.22.8",
     "@babel/preset-env": "^7.22.7",
-    "@pbe/react-yandex-maps": "^1.2.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

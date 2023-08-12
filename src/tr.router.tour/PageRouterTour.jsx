@@ -1,10 +1,10 @@
-import React, {objectManagerFeatures} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
 
 
-import {YMaps, Map,Placemark} from '@pbe/react-yandex-maps';
+// import {YMaps, Map,Placemark} from '@pbe/react-yandex-maps';
 
 
 
@@ -52,19 +52,7 @@ function PageRouterTour() {
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>
-                                <YMaps>
-  <Map 
-    defaultState={{
-      transition:'0s',
-      center: [55.75, 37.57],
-      zoom: 9,
-      controls: ["zoomControl", "fullscreenControl"],
-    }}
-    modules={["control.ZoomControl", "control.FullscreenControl"]}
-  >
-    <Placemark  defaultGeometry={[55.75, 37.57]} />
-  </Map>
-</YMaps>
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a69bc47708634cb92c1e91fb62ff2684e9fe985d94c4b7a6b148210dca3efce&amp;source=constructor" width="400" height="280" frameborder="0"></iframe>
                                     <p><span style={{width:'8px'}}></span>Двигайтесь по кросной линии</p>
                                 </div>
                             </div>
