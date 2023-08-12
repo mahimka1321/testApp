@@ -43,7 +43,7 @@ function PageRouterTour() {
                                     </div>
                                 </Link>
                             </div>
-                            <div className='map__info_tour' style={{marginBottom:'20px'}}>
+                            <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a69bc47708634cb92c1e91fb62ff2684e9fe985d94c4b7a6b148210dca3efce&amp;source=constructor" width="400" height="280" frameborder="0"></iframe>
