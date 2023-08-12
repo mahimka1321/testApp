@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { YMaps, Map } from '@pbe/react-yandex-maps';
+
+
+
+
+import {YMaps, Map,ObjectManager} from '@pbe/react-yandex-maps';
+
+
 
 import Header from '../tr.all.header/Header';
 import Menu from '../tr.all.menu/Menu';
@@ -46,11 +52,34 @@ function PageRouterTour() {
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>
-                                    <YMaps>
-                                        <div>
-                                            <Map defaultState={{ center: [55.75, 37.57], zoom: 15 }} />
-                                        </div>
-                                    </YMaps>
+                                <YMaps>
+  <Map
+    defaultState={{
+      center: [55.751574, 37.573856],
+      zoom: 10,
+    }}
+  >
+    <ObjectManager
+      options={{
+        clusterize: true,
+        gridSize: 32,
+      }}
+      objects={{
+        openBalloonOnClick: true,
+        preset: "islands#greenDotIcon",
+      }}
+      clusters={{
+        preset: "islands#redClusterIcons",
+      }}
+      filter={(object) => object.id % 2 === 0}
+      defaultFeatures={objectManagerFeatures}
+      modules={[
+        "objectManager.addon.objectsBalloon",
+        "objectManager.addon.objectsHint",
+      ]}
+    />
+  </Map>
+</YMaps>
                                     <p><span style={{width:'8px'}}></span>Двигайтесь по кросной линии</p>
                                 </div>
                             </div>

@@ -8,10 +8,7 @@
     border-radius: 0;
     outline: 0;
 
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-      -o-transition: .4s;
-         transition: .4s;
+
 }
 
 html,body
@@ -21,7 +18,7 @@ html,body
     -ms-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
-    
+
     -moz-user-select: none;
     -o-user-select:none;
     -khtml-user-select: none;
