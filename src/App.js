@@ -6,6 +6,8 @@ import ShopTour from './tr.shop/ShopTour';
 import MobMenu from './tr.all.menu/MobMenu';
 import Profile from './tr.profile/Profile';
 import PurchasePage from './tr.sh.purchase/PurchasePage';
+import PagePurchaseTour from './tr.purchase.tour/PagePurchaseTour';
+import PageRouterTour from './tr.router.tour/PageRouterTour';
 import ScrollToTop from './ScrollToTop';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
                 <Route path="/info-tour" element={<InfoTour />}/>
                 <Route path="/shop-tour" element={<ShopTour />}/>
                 <Route path="/purchase-tour" element={<PurchasePage />}/>
+                <Route path="/tour" element={<PagePurchaseTour />}/>
+                <Route path="/router-tour" element={<PageRouterTour />}/>
             </Routes>
             <MobMenu/>
         </>

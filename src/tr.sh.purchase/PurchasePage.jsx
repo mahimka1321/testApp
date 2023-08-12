@@ -64,7 +64,7 @@ function PurchasePage() {
                     <ul>
                         <div>
                             <Link to='/shop-tour'>Назад</Link>
-                            <Link to='/' style={styleControlTour}>Оплатить</Link>
+                            <Link to='/profile' style={styleControlTour}>Оплатить</Link>
                         </div>
                     </ul>
                 </div>

@@ -79,6 +79,7 @@ const {
                             {/*  Владимир  */}
                             <Tour 
                                 imgTour={vladimir_tour_1}
+                                tourlink="/tour"
                                 title="Владимир" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -86,6 +87,7 @@ const {
                             {/*  Суздаль  */}
                             <Tour 
                                 imgTour={suzdal_tour_1}
+                                tourlink="/tour"
                                 title="Суздаль" 
                                 time="16" 
                                 routes="8 маршрутов"
@@ -93,12 +95,14 @@ const {
                             {/*  Александров  */}
                             <Tour 
                                 imgTour={aleksandrov_tour_1} 
+                                tourlink="/tour"
                                 title="Александров" 
                                 time="11" 
                                 routes="5 маршрутов"
                             />
                             {/*  Боголюбово  */}
                             <Tour imgTour={bogolubovo_tour_1}
+                                tourlink="/tour"
                                 title="Боголюбово" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -106,6 +110,7 @@ const {
                             {/*  Гороховец  */}
                             <Tour 
                                 imgTour={gorohovec_tour_1}
+                                tourlink="/tour"
                                 title="Гороховец" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -113,6 +118,7 @@ const {
                             {/*  Гусь Хрустальный  */}
                             <Tour 
                                 imgTour={goos_tour_1}
+                                tourlink="/tour"
                                 title="Гусь Хрустальный" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -120,6 +126,7 @@ const {
                             {/*  Иваново  */}
                             <Tour 
                                 imgTour={ivanovo_tour_1}
+                                tourlink="/tour"
                                 title="Иваново" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -127,6 +134,7 @@ const {
                             {/*  Калязин  */}
                             <Tour 
                                 imgTour={kaliazin_tour_1}
+                                tourlink="/tour"
                                 title="Калязин" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -134,6 +142,7 @@ const {
                             {/*  Кидекша  */}
                             <Tour 
                                 imgTour={kidekha_tour_1}
+                                tourlink="/tour"
                                 title="Кидекша" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -141,6 +150,7 @@ const {
                             {/*  Кострома  */}
                             <Tour 
                                 imgTour={kostrama_tour_1}
+                                tourlink="/tour"
                                 title="Кострома" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -148,6 +158,7 @@ const {
                             {/*  Москва  */}
                             <Tour 
                                 imgTour={moskva_tour_1}
+                                tourlink="/tour"
                                 title="Москва" 
                                 time="28" 
                                 routes="14 маршрутов"
@@ -155,6 +166,7 @@ const {
                             {/*  Переславль-Залевский  */}
                             <Tour 
                                 imgTour={pereslav_tour_1}
+                                tourlink="/tour"
                                 title="Переславль-Залевский" 
                                 time="28" 
                                 routes="14 маршрутов"
