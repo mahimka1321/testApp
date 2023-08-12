@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { YMaps, Map } from '@pbe/react-yandex-maps';
 
 import Header from '../tr.all.header/Header';
 import Menu from '../tr.all.menu/Menu';
@@ -12,7 +13,6 @@ import './pageRouterTour.scss'
 import Aleks from '../assets/img/Александров/1.webp';
 
 function PageRouterTour() {
-
     const {
         numTheme,setNumTheme,search_active
     }= Hoocks();
@@ -46,7 +46,11 @@ function PageRouterTour() {
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a69bc47708634cb92c1e91fb62ff2684e9fe985d94c4b7a6b148210dca3efce&amp;source=constructor" width="400" height="280" frameborder="0"></iframe>
+                                    <YMaps>
+                                        <div>
+                                            <Map defaultState={{ center: [55.75, 37.57], zoom: 15 }} />
+                                        </div>
+                                    </YMaps>
                                     <p><span style={{width:'8px'}}></span>Двигайтесь по кросной линии</p>
                                 </div>
                             </div>
