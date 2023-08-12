@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {objectManagerFeatures} from 'react';
 import { Link } from 'react-router-dom';
 
 
 
 
-import {YMaps, Map,ObjectManager} from '@pbe/react-yandex-maps';
+import {YMaps, Map,Placemark} from '@pbe/react-yandex-maps';
 
 
 
@@ -53,31 +53,16 @@ function PageRouterTour() {
                                 <h1>Ваш маршрут</h1>
                                 <div>
                                 <YMaps>
-  <Map
+  <Map 
     defaultState={{
-      center: [55.751574, 37.573856],
-      zoom: 10,
+      transition:'0s',
+      center: [55.75, 37.57],
+      zoom: 9,
+      controls: ["zoomControl", "fullscreenControl"],
     }}
+    modules={["control.ZoomControl", "control.FullscreenControl"]}
   >
-    <ObjectManager
-      options={{
-        clusterize: true,
-        gridSize: 32,
-      }}
-      objects={{
-        openBalloonOnClick: true,
-        preset: "islands#greenDotIcon",
-      }}
-      clusters={{
-        preset: "islands#redClusterIcons",
-      }}
-      filter={(object) => object.id % 2 === 0}
-      defaultFeatures={objectManagerFeatures}
-      modules={[
-        "objectManager.addon.objectsBalloon",
-        "objectManager.addon.objectsHint",
-      ]}
-    />
+    <Placemark  defaultGeometry={[55.75, 37.57]} />
   </Map>
 </YMaps>
                                     <p><span style={{width:'8px'}}></span>Двигайтесь по кросной линии</p>

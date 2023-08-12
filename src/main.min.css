@@ -7,7 +7,10 @@
     border: 0;
     border-radius: 0;
     outline: 0;
-
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+      -o-transition: .4s;
+         transition: .4s;
 
 }
 
@@ -28,4 +31,9 @@ html,body
 
     box-sizing: border-box;
     background: var(--colWhite_400);
+}
+
+ymaps
+{
+    transition: 0s;
 }
