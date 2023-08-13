@@ -1,23 +1,13 @@
-import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
-
-
-
-// import {YMaps, Map,Placemark} from '@pbe/react-yandex-maps';
-
-
-
 import Header from '../tr.all.header/Header';
 import Menu from '../tr.all.menu/Menu';
-import Comments from '../tr.comments/Comments';
 import InfoPageTour from '../tr.top.info.tour/InfoPageTour';
 
 import Hoocks from '../Hoocks';
 import './pageRouterTour.scss'
 
 import Aleks from '../assets/img/Александров/1.webp';
-
 import dfdfdss from '../assets/1212.mp3';
 
 function PageRouterTour() {
@@ -41,18 +31,17 @@ function PageRouterTour() {
                             <i className='back_btn'><Link to='/tour'>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                                 <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
-                                    <img style={{border:'1px solid #616161', filter: 'brightness(0.8)'}} alt='' src={Aleks}/>
+                                    <img style={{filter: 'brightness(0.8)'}} alt='' src={Aleks}/>
                                     <div className='sh_t__ op__sh_t'>
-                                        <h4>Введение - Александров </h4>
+                                        <h4>Маршрут 1 - Александров </h4>
                                     </div>
                                     <div className='sh_popo__'>
-                                        <audio controls="controls" className='audio_tour'>
+                                        <audio controls="controls" className='audio_tour' id='player'>
                                             <source src={dfdfdss} type="audio/mp3" />
                                         </audio>
                                     </div>
                                 </Link>
                             </div>
-
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
                                 <div>

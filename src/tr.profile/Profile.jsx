@@ -24,19 +24,6 @@ import bogolubovo_tour_1 from '../assets/img/Боголюбово/1.webp';
 import gorohovec_tour_1 from '../assets/img/Гороховец/1.webp';
 /*  Гусь Хрустальный  */
 import goos_tour_1 from '../assets/img/Гусь_Хрустальный/1.webp';
-/*  Иваново  */
-import ivanovo_tour_1 from '../assets/img/Иваново/1.webp';
-/*  Калязин  */
-import kaliazin_tour_1 from '../assets/img/Калязин/1.webp';
-/*  Кидекша  */
-import kidekha_tour_1 from '../assets/img/Кидекша/1.webp';   
-/*  Кострома  */
-import kostrama_tour_1 from '../assets/img/Кострома/1.webp';   
-/*  Москва  */
-import moskva_tour_1 from '../assets/img/Москва/1.webp';
-/*  Переславль-Залевский  */
-import pereslav_tour_1 from '../assets/img/Переславль_Залевский/1.webp';
-
 
 function Profile() {
 
@@ -56,7 +43,7 @@ const {
                 }}>
                     <div className='container__profile_name'>
                         <div>
-                            <img alt="" src={pereslav_tour_1}/>
+                            <img alt="" src={goos_tour_1}/>
                             <div>
                                 <input placeholder="Вова"/>
                                 <input placeholder="Невова"/>
@@ -120,54 +107,6 @@ const {
                                 imgTour={goos_tour_1}
                                 tourlink="/tour"
                                 title="Гусь Хрустальный" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Иваново  */}
-                            <Tour 
-                                imgTour={ivanovo_tour_1}
-                                tourlink="/tour"
-                                title="Иваново" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Калязин  */}
-                            <Tour 
-                                imgTour={kaliazin_tour_1}
-                                tourlink="/tour"
-                                title="Калязин" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Кидекша  */}
-                            <Tour 
-                                imgTour={kidekha_tour_1}
-                                tourlink="/tour"
-                                title="Кидекша" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Кострома  */}
-                            <Tour 
-                                imgTour={kostrama_tour_1}
-                                tourlink="/tour"
-                                title="Кострома" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Москва  */}
-                            <Tour 
-                                imgTour={moskva_tour_1}
-                                tourlink="/tour"
-                                title="Москва" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Переславль-Залевский  */}
-                            <Tour 
-                                imgTour={pereslav_tour_1}
-                                tourlink="/tour"
-                                title="Переславль-Залевский" 
                                 time="28" 
                                 routes="14 маршрутов"
                             />

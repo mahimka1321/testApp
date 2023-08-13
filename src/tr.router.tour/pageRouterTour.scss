@@ -12,11 +12,10 @@
     left: 0;
     margin-left: 16px;
     margin-top: 2px;
-    width: 270px;
+    width: 95%;
 }
 
 .audio_tour::-webkit-media-controls-current-time-display,
-::-webkit-media-controls-volume-control-container,
 ::-webkit-media-controls-time-remaining-display
 {
     display: none;
@@ -47,5 +46,6 @@
 .audio_tour::-webkit-media-controls-timeline
 {
     margin-top: 20px;
-    margin-left: -6px;
+    margin-left: -11px;
+
 }
