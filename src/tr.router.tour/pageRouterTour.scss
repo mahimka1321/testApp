@@ -15,22 +15,6 @@
     width: 95%;
 }
 
-.audio_tour::-webkit-media-controls-current-time-display,
-::-webkit-media-controls-time-remaining-display
-{
-    display: none;
-}
-
-
-
-.audio_tour::-webkit-media-controls-play-button
-{
-    background: url(../assets/img/items/play.png) no-repeat;
-    background-size: 17px;
-    margin-left: 10px;
-    margin-top: 8px;
-}
-
 .op__sh_t
 {
     display: flex;
@@ -43,16 +27,21 @@
 }
 
 
-.audio_tour::-webkit-media-controls-timeline
+.inpun__progres_bar
 {
-    margin-top: 20px;
-    margin-left: -11px;
+    width: 280px;
+    height: 4px;
+    accent-color: var(--colorBlue200);
+    -webkit-appearance: none;
+    background: #616161;
+    background-size: 0% 100%;
+    background-image: linear-gradient(var(--colorBlue200), var(--colorBlue200));
+    background-repeat: no-repeat;
+    transition: 0s;
 
-}
-
-
-input[type="button" i]
-{
-    display: none;
-
+    border-radius: 4px;
+    &::-webkit-slider-thumb
+    {
+        opacity: 0;
+    }
 }

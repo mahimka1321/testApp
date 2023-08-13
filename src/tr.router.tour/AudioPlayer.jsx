@@ -27,6 +27,9 @@ class AudioPlayer extends React.Component {
     })
   }
 
+  handleSeek = (e) => {
+    this.audioRef.current.currentTime = e.target.value;
+  }
 
   render() {
     const { playing, currentTime, duration } = this.state
@@ -35,24 +38,19 @@ class AudioPlayer extends React.Component {
     let pdf = Math.floor(currentTime*100 / duration)
 
     const style =  {
-        position:'absolute',
-        width: `${pdf}%`,
-        background: '#23A6FF',
-        height:'4px',
-        zIndex:'10',
-        borderRadius: '5px'
+        backgroundSize: `${pdf}%`
     }
 
-    const style2 =  {
-        position:'absolute',
-        width: `${100}%`,
-        background: '#616161',
-        height:'4px',
-        zIndex:'1',
-        borderRadius: '5px'
+
+
+    function opoo(e) {
+        let dfd = document.getElementById('dfd')
+        currentTime = ((e.offSetX/dfd.offSetWidth) * duration)
     }
+
+
     return (
-      <div style={{marginLeft:'25px',position:'relative', width:'280px'}}>
+      <div style={{marginLeft:'25px',marginTop:'100px',marginBottom:'20px',position:'relative', width:'280px'}}>
         <audio
           ref={this.audioRef}
           src={src}
@@ -81,14 +79,22 @@ class AudioPlayer extends React.Component {
                 }}>{controlrouters}</p>
                 <p style={{
                     color:'#616161', 
-                    paddingBottom:'10px', 
+                    paddingBottom:'3px', 
                     display:"flex",
                     justifyContent:'right',
                     width: '280px',
                     fontSize:'14px'
                 }}>{Math.floor(currentTime)/100} / {Math.floor(duration)/100}</p>
-                <h3 style={style}></h3>
-                <h3 style={style2}></h3>
+                <input
+                    type="range"
+                    className='inpun__progres_bar'
+                    style={style}
+                    min={0}
+                    max={duration}
+                    step={0.01}
+                    value={currentTime}
+                    onChange={this.handleSeek}
+                />
             </div>
         </div>
       </div>
