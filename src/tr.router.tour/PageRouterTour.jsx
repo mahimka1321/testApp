@@ -6,13 +6,13 @@ import InfoPageTour from '../tr.top.info.tour/InfoPageTour';
 
 import Hoocks from '../Hoocks';
 import './pageRouterTour.scss'
-
+import AudioPlayer from './AudioPlayer';
 import Aleks from '../assets/img/Александров/1.webp';
 import dfdfdss from '../assets/1212.mp3';
 
 function PageRouterTour() {
     const {
-        numTheme,setNumTheme,search_active
+        numTheme,setNumTheme,search_active,controlrouters,setControlRouters
     }= Hoocks();
 
     return (
@@ -30,17 +30,7 @@ function PageRouterTour() {
                             <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='Куплено'/>
                             <i className='back_btn'><Link to='/tour'>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
-                                <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
-                                    <img style={{filter: 'brightness(0.8)'}} alt='' src={Aleks}/>
-                                    <div className='sh_t__ op__sh_t'>
-                                        <h4>Маршрут 1 - Александров </h4>
-                                    </div>
-                                    <div className='sh_popo__'>
-                                        <audio controls="controls" className='audio_tour' id='player'>
-                                            <source src={dfdfdss} type="audio/mp3" />
-                                        </audio>
-                                    </div>
-                                </Link>
+                                <AudioPlayer src={dfdfdss} title='Маршрут 1' controlrouters={controlrouters}/>
                             </div>
                             <div className='map__info_tour' style={{marginBottom:'80px'}}>
                                 <h1>Ваш маршрут</h1>
@@ -51,7 +41,6 @@ function PageRouterTour() {
                             </div>
                         </div>
                     </div>
-
                 <div className="opBox opBoxTwoo"></div>
             </div>
         </div>

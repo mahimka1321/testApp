@@ -13,8 +13,32 @@ import Aleks from '../assets/img/Александров/1.webp';
 
 function PagePurchaseTour() {
     const {
-        numTheme,setNumTheme,search_active
+        numTheme,setNumTheme,search_active,controlrouters,setControlRouters
     }= Hoocks();
+
+
+    const [opofpsdf, setOpofpsdf] = React.useState('')
+
+    function op1() {
+        setControlRouters('Вседение')
+        setOpofpsdf('/router-tour')
+    }
+    function op2() {
+        setControlRouters('Маршрут 1')
+        setOpofpsdf('/router-tour')
+    }
+    function op3() {
+        setControlRouters('Маршрут 2')
+        setOpofpsdf('/router-tour')
+    }
+    function op4() {
+        setControlRouters('Маршрут 3')
+        setOpofpsdf('/router-tour')
+    }
+    function op5() {
+        setControlRouters('Маршрут 4')
+        setOpofpsdf('/router-tour')
+    }
 
     return (
         <div className='bgb'>
@@ -31,7 +55,8 @@ function PagePurchaseTour() {
                         <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='Куплено'/>
                         <i className='back_btn'><Link to='/profile'>Назад</Link></i>
                         <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
-                            <Link to='/router-tour' className='popopo' style={{paddingLeft:'20px'}}>
+                        <p style={{marginLeft:'20px',padding:'5px', color:'#616161'}}>для перехода на маршрут, сделайте двойной клик</p>
+                            <Link onClick={op1} to={opofpsdf} className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Введение</h4>
@@ -41,7 +66,7 @@ function PagePurchaseTour() {
                                     <p className='__nopius'>3 мин</p>
                                 </div>
                             </Link>
-                            <Link to='/router-tour' className='popopo' style={{paddingLeft:'20px'}}>
+                            <Link onClick={op2} to={opofpsdf} className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Маршрут 1</h4>
@@ -51,7 +76,7 @@ function PagePurchaseTour() {
                                     <p className='__nopius'>26 мин</p>
                                 </div>
                             </Link>
-                            <Link to='/router-tour' className='popopo' style={{paddingLeft:'20px'}}>
+                            <Link onClick={op3} to={opofpsdf} className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Маршрут 2</h4>
@@ -61,7 +86,7 @@ function PagePurchaseTour() {
                                     <p className='__nopius'>14 мин</p>
                                 </div>
                             </Link>
-                            <Link to='/router-tour' className='popopo' style={{paddingLeft:'20px'}}>
+                            <Link onClick={op4} to={opofpsdf} className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Маршрут 3</h4>
@@ -71,7 +96,7 @@ function PagePurchaseTour() {
                                     <p className='__nopius'>21 мин</p>
                                 </div>
                             </Link>
-                            <Link to='/router-tour' className='popopo' style={{paddingLeft:'20px'}}>
+                            <Link onClick={op5} to={opofpsdf} className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Маршрут 4</h4>

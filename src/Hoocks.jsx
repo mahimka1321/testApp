@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 export default function Hoocks() {
     let storageTheme = JSON.parse(localStorage.getItem("numTheme"));
@@ -44,7 +44,12 @@ export default function Hoocks() {
             setOp(0)
         }
     }
+
+    let storageControlrouters = JSON.parse(localStorage.getItem("controlrouters"));
+    const [controlrouters, setControlRouters] = useState(storageControlrouters || '')
+    localStorage.setItem("controlrouters", JSON.stringify(controlrouters));
+
     return{
-        numTheme,setNumTheme,search_active, rorp
+        numTheme,setNumTheme,search_active, rorp,controlrouters,setControlRouters
     }
 }
