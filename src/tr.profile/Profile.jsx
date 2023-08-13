@@ -18,12 +18,6 @@ import suzdal_tour_1 from '../assets/img/Суздаль/1.webp';
 import vladimir_tour_1 from '../assets/img/Владимир/1.webp';
 /*  Александров  */
 import aleksandrov_tour_1 from '../assets/img/Александров/1.webp';
-/*  Боголюбово  */
-import bogolubovo_tour_1 from '../assets/img/Боголюбово/1.webp';
-/*  Гороховец  */
-import gorohovec_tour_1 from '../assets/img/Гороховец/1.webp';
-/*  Гусь Хрустальный  */
-import goos_tour_1 from '../assets/img/Гусь_Хрустальный/1.webp';
 
 function Profile() {
 
@@ -41,9 +35,9 @@ const {
                     position:'relative',
                     zIndex:'2',
                 }}>
-                    <div className='container__profile_name'>
+                    <div className='container__profile_name cl__container-size'>
                         <div>
-                            <img alt="" src={goos_tour_1}/>
+                            <img alt="" src={aleksandrov_tour_1}/>
                             <div>
                                 <input placeholder="Вова"/>
                                 <input placeholder="Невова"/>
@@ -51,7 +45,7 @@ const {
                             </div>
                         </div>
                     </div>
-                    <div className='containet__profile-tour--content'>
+                    <div className='containet__profile-tour--content cl__container-size'>
                         <div className="btn__profile_controls">
                             <button className="controls__btn_active"><Link to=''>Купленные туры</Link></button>
                             <button><Link to=''>Статистика</Link></button>
@@ -86,29 +80,6 @@ const {
                                 title="Александров" 
                                 time="11" 
                                 routes="5 маршрутов"
-                            />
-                            {/*  Боголюбово  */}
-                            <Tour imgTour={bogolubovo_tour_1}
-                                tourlink="/tour"
-                                title="Боголюбово" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Гороховец  */}
-                            <Tour 
-                                imgTour={gorohovec_tour_1}
-                                tourlink="/tour"
-                                title="Гороховец" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Гусь Хрустальный  */}
-                            <Tour 
-                                imgTour={goos_tour_1}
-                                tourlink="/tour"
-                                title="Гусь Хрустальный" 
-                                time="28" 
-                                routes="14 маршрутов"
                             />
                         </div>
                     </div>

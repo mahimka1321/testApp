@@ -93,7 +93,7 @@ React.useEffect(()=>{
                     position:'relative',
                     zIndex:'2',
                 }}>
-                    <div className='container__new_tours'>
+                    <div className='container__new_tours cl__container-size'>
                         <h2>Новые туры</h2>
                         <div className="container__scroll">
                             {/*  Суздаль  */}
@@ -138,7 +138,7 @@ React.useEffect(()=>{
                             />
                         </div>
                     </div>
-                    <div className='containet__box_tours'>
+                    <div className='containet__box_tours cl__container-size'>
                         <h2>Все туры</h2>
                         <div 
                         style={{

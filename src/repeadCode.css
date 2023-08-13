@@ -1,8 +1,16 @@
 .cl__container-size
 {
-    max-width: 1000px;
-    min-width: 200px;
-    width: 100%;
+    width: 1000px;
+}
+
+@media screen and (max-width: 1000px) 
+{
+    .cl__container-size
+    {
+        max-width: 1000px;
+        min-width: 200px;
+        width: 100%;
+    }
 }
 
 ._tr__on_t
