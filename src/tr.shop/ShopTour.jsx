@@ -14,12 +14,13 @@ import Aleks from '../assets/img/Александров/1.webp';
 function ShopTour() {
 
     const {
-        numTheme,setNumTheme,search_active
+        numTheme,setNumTheme,search_active, routOP
     }= Hoocks();
+
+    
 
     return (
         <div className='bgb'>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="opMbox">
                 <Menu/>
                     <div className='info__page_tour cl__container-size'
@@ -30,7 +31,7 @@ function ShopTour() {
                     >
                         <div >
                             <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='799p'/>
-                            <i className='back_btn'><Link to='/info-tour'>Назад</Link></i>
+                            <i className='back_btn'><Link to={`/info-tour${routOP}`}>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                             <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
@@ -58,8 +59,8 @@ function ShopTour() {
                             <h1>Краткое описание города</h1>
                             <p>Этот тур подойдек каждому, как семье с детьми, так и бабке которая не знает куда слить свои миллиарды и еще какой то текст Конструктор карт Яндекса позволяет создать карту онлайн без навыков программирования. Можно отметить на карте нужные объекты, нарисовать схему проезда, маршрут прогулки или отметить зону доставки. ... Карты для печати в высоком разрешении можно создать только</p>
                             <div>
-                                <Link to='/info-tour'>Назад</Link>
-                                <Link to='/purchase-tour'>Купить тур</Link>
+                                <Link to={`/info-tour${routOP}`}>Назад</Link>
+                                <Link to='/purchase-tour' >Купить тур</Link>
                                 <p>После покупки тур будет в вашем личном кабинете </p>
                                 <svg style={{
                                     display:'flex',

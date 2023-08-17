@@ -44,7 +44,6 @@ function PurchasePage() {
 
     return (
         <>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="purchase_page">
                 <div className="bax__purchase">
                     <div className="purchase_info_check">

@@ -17,7 +17,6 @@ function PageRouterTour() {
 
     return (
         <div className='bgb'>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="opMbox">
                 <Menu/>
                     <div className='info__page_tour cl__container-size'

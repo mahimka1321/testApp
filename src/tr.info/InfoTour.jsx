@@ -21,7 +21,6 @@ function InfoTour() {
 
     return (
         <div className='bgb'>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="opMbox">
                 <Menu/>
                 <div className='info__page_tour cl__container-size'
@@ -42,13 +41,13 @@ style={{
                         <button className='btn__menu_controls'>по рейтингу 🠟</button>
                     </div>
                     <div className='containet__wrapper_in-tour' style={{marginTop:'-0px'}}>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
-                        <WrapperTour title='Семейный тур' tourlink='/shop-tour'/>
+                        <WrapperTour title='Семейный тур'/>
+                        <WrapperTour title='Семейный тур'/>
+                        <WrapperTour title='Семейный тур'/>
+                        <WrapperTour title='Семейный тур'/>
+                        <WrapperTour title='Семейный тур'/>
+                        <WrapperTour title='Семейный тур'/>
+                        <WrapperTour title='Семейный тур'/>
                     </div>
                 </div>
                 <div className="opBox opBoxTwoo"></div>

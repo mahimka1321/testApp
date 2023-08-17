@@ -16,12 +16,13 @@
 
 html,body
 {
+
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
-
+    transition: none !important;
     -moz-user-select: none;
     -o-user-select:none;
     -khtml-user-select: none;
@@ -31,7 +32,12 @@ html,body
 
     box-sizing: border-box;
     background: var(--colWhite_400);
+
 }
+
+
+
+
 
 ymaps
 {

@@ -22,12 +22,12 @@ import aleksandrov_tour_1 from '../assets/img/Александров/1.webp';
 function Profile() {
 
 const {
-    numTheme,setNumTheme,search_active, rorp
+    numTheme,setNumTheme,search_active, rorp,
+
 }= Hoocks();
 
     return (
         <div className="profile_page" onClick={rorp}>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="opMbox">
                 <Menu/>
                 <div className='cntainer_content'
@@ -57,30 +57,6 @@ const {
                         }} 
                         className="container__control_tour"
                         >
-                            {/*  Владимир  */}
-                            <Tour 
-                                imgTour={vladimir_tour_1}
-                                tourlink="/tour"
-                                title="Владимир" 
-                                time="28" 
-                                routes="14 маршрутов"
-                            />
-                            {/*  Суздаль  */}
-                            <Tour 
-                                imgTour={suzdal_tour_1}
-                                tourlink="/tour"
-                                title="Суздаль" 
-                                time="16" 
-                                routes="8 маршрутов"
-                            />
-                            {/*  Александров  */}
-                            <Tour 
-                                imgTour={aleksandrov_tour_1} 
-                                tourlink="/tour"
-                                title="Александров" 
-                                time="11" 
-                                routes="5 маршрутов"
-                            />
                         </div>
                     </div>
                 </div> 

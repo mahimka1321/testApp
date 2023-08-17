@@ -8,7 +8,7 @@ import Aleks from '../assets/img/Александров/img.tour/1.webp';
 
 function WrapperTour(props) {
     return ( 
-        <Link to={props.tourlink} className='popopo'>
+        <Link to='/shop-tour' className='popopo'>
             <div className='dfdsd'>
             <div style={{display:'flex'}}>
             <img alt='' src={Aleks}/>

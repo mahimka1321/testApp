@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 /*  Шапка  */
 import Header from '../tr.all.header/Header';
 /*  Меню  */
@@ -52,11 +52,21 @@ import uyriev_polskiy_tour_1 from '../assets/img/Юрьев_Польский/1.w
 /*  Ярославль  */
 import yaroslavl_tour_1 from '../assets/img/Ярославль/1.webp';
 
+
+import ItemsNT from '../tourOP.json'
+
 function Home() {
 
 const {
-    numTheme,setNumTheme,search_active, rorp
+ rorp,
+
+    setRoutOP,
+    setVlad,
+    arr,
+    setArr,
+    
 }= Hoocks();
+
 
 React.useEffect(()=>{
     function hasTouch() {
@@ -81,11 +91,27 @@ React.useEffect(()=>{
             }
         } catch (ex) {}
     }
+
 },[])
+
+const data = (ItemsNT)
+
+function cop(){
+
+    if(arr) 
+    {
+         setArr(null)
+         setArr([5 , 2])
+         localStorage.setItem("arr", JSON.stringify(arr));
+    } else {
+
+    }
+
+}
+//let pdfs = window.location.href = `/info-tour${routOP}`
 
     return (
         <div className="home_page" onClick={rorp}>
-            <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
             <div className="opMbox">
                 <Menu/>
                 <div className='cntainer_content'
@@ -94,7 +120,7 @@ React.useEffect(()=>{
                     zIndex:'2',
                 }}>
                     <div className='container__new_tours cl__container-size'>
-                        <h2>Новые туры</h2>
+                        <h2>{ data.find(({ id }) => { return id === arr[1]; })?.title }</h2>
                         <div className="container__scroll">
                             {/*  Суздаль  */}
                             <NewTour 
@@ -139,7 +165,7 @@ React.useEffect(()=>{
                         </div>
                     </div>
                     <div className='containet__box_tours cl__container-size'>
-                        <h2>Все туры</h2>
+                        <h2 onClick={cop}>{ data.find(({ id }) => { return id === arr[0]; })?.title }</h2>
                         <div 
                         style={{
                             textAlign:'center',                    
@@ -150,15 +176,16 @@ React.useEffect(()=>{
                             {/*  Владимир  */}
                             <Tour 
                                 imgTour={vladimir_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/vladimir' 
                                 title="Владимир" 
                                 time="28" 
                                 routes="14 туров"
+                                opTop={()=>{setVlad('Владимир'); setRoutOP('/vladimir')}}
                             />
                             {/*  Суздаль  */}
                             <Tour 
                                 imgTour={suzdal_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/suzdal' 
                                 title="Суздаль" 
                                 time="16" 
                                 routes="8 туров"
@@ -166,7 +193,7 @@ React.useEffect(()=>{
                             {/*  Александров  */}
                             <Tour 
                                 imgTour={aleksandrov_tour_1} 
-                                tourlink='info-tour'
+                                opr='/aleksandrov' 
                                 title="Александров" 
                                 time="11" 
                                 routes="5 туров"

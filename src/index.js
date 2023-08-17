@@ -10,7 +10,6 @@ import './color.css';
 
 
 (() => {
-    'use strict';
     const objects = document.getElementsByClassName('asyncImage');
     Array.from(objects).map((item) => {
         const img = new Image();

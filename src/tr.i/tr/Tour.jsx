@@ -1,11 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Hoocks from '../../Hoocks';
 import './tour.scss';
 
+
+
 function Tour(props) {
+    const {
+        routOP,setRoutOP
+    } = Hoocks();
+
+
+
+        
+
+
     return (
-        <Link to={props.tourlink} className='__tour'>
+        <div  className='__tour' onClick={()=>{setRoutOP(props.opr); window.location.href = '/testapp/info-tour' + props.opr}}>
             <div className='__img_tour'>
                 <div className='img_container'>
                     <img className='img' alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={props.imgTour}/>
@@ -38,7 +49,7 @@ function Tour(props) {
                     <li className='info__t_last' style={{display:'grid'}}>{props.routes}</li>
                 </ul>
             </div>
-        </Link>
+        </div>
     );
 }
 

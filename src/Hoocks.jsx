@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+
 export default function Hoocks() {
     let storageTheme = JSON.parse(localStorage.getItem("numTheme"));
     const [numTheme, setNumTheme] = React.useState(storageTheme || false)
@@ -49,7 +50,31 @@ export default function Hoocks() {
     const [controlrouters, setControlRouters] = useState(storageControlrouters || '')
     localStorage.setItem("controlrouters", JSON.stringify(controlrouters));
 
+
+
+    const [vlad, setVlad] = useState('')
+
+
+
+    let storageRoutOP = JSON.parse(localStorage.getItem("routOP"));
+    const [routOP, setRoutOP] = useState(storageRoutOP || '')
+    localStorage.setItem("routOP", JSON.stringify(routOP));
+
+
+
+let storageOOO = JSON.parse(localStorage.getItem("arr"));
+const [arr, setArr] = useState(storageOOO || [1 , 3])
+localStorage.setItem("arr", JSON.stringify(arr));
+
+
+
     return{
-        numTheme,setNumTheme,search_active, rorp,controlrouters,setControlRouters
+        numTheme,setNumTheme,search_active, rorp, controlrouters, setControlRouters,
+
+        vlad, setVlad,
+
+        routOP,setRoutOP,
+        arr, setArr
     }
 }
+

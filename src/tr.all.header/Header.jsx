@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Hoocks from '../Hoocks';
 import './header.scss';
 
-function Header({setNumTheme,numTheme,search_active}) {
+function Header() {
+
+    const {
+        numTheme,setNumTheme,
+    }= Hoocks();
 
     return (
         <header >

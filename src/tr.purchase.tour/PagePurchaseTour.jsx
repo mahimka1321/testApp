@@ -42,7 +42,6 @@ function PagePurchaseTour() {
 
     return (
         <div className='bgb'>
-        <Header setNumTheme={setNumTheme} numTheme={numTheme} search_active={search_active}/>
         <div className="opMbox">
             <Menu/>
                 <div className='info__page_tour cl__container-size'
@@ -66,7 +65,7 @@ function PagePurchaseTour() {
                                     <p className='__nopius'>3 мин</p>
                                 </div>
                             </Link>
-                                <Link onClick={op2} to='' className='popopo' style={{padding:'0', paddingLeft:'20px'}}>
+                            <Link onClick={op2} to='' className='popopo' style={{padding:'0', paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Маршрут 1</h4>
