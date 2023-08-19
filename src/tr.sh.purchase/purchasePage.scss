@@ -5,15 +5,17 @@
     align-items: center;
     width: 100%;
     height: 100svh;
+    margin-top: 50px;
     .bax__purchase
     {
         display: block;
         width: 320px;
-        height: 400px;
+        height: 50svh;
         border-radius: 8px;
         background: var(--colWhite_400);
         box-shadow: 0px 0px 15px 0px var(--BH);
         position: relative;
+
         .purchase_info_check
         {
             display: flex;
@@ -123,3 +125,4 @@
         }
     }
 }
+

@@ -17,3 +17,12 @@
 {
     transition: 0s;
 }
+
+@media screen and (max-width: 600px) 
+{
+    .opMbox
+    {
+        display: block;
+        justify-content: none;
+    }
+}

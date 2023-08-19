@@ -29,7 +29,7 @@ function WrapperTour(props) {
                     </span>
                     4.9
                 </p>
-                <p className='__nopius'>4 маршрута</p>
+                <p className='__nopius'>5 маршрута</p>
                 <p className='__nopius'>{props.time}</p>
                 <p className='__nopius'>{props.price}</p>
             </div>

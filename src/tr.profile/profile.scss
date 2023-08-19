@@ -61,8 +61,8 @@
                 }
             }
         }
-        .containet__profile-tour--content
-        {
+        .containet__profile-tour--content 
+        { 
             margin: 0 auto;
             margin-top: 20px;
             min-height: unset;
@@ -161,7 +161,7 @@
     }
 }
 
-@media screen and (max-width: 550px) 
+@media screen and (max-width: 600px) 
 {
     .profile_page
     {
@@ -169,6 +169,7 @@
         {    
             .container__profile_name
             {
+                max-width: 100%;
                 div 
                 {
                     div 
@@ -178,8 +179,12 @@
                     }
                 }
             }
+            .containet__profile-tour--content
+            {
+                max-width: 100%;
+            }
+
         }
+
     }
 }
-
-
