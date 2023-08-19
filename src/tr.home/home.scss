@@ -112,3 +112,39 @@
         display: none;
     }
 }
+
+
+.menu_controls
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 10px;
+    .btn__menu_controls{
+        width: 120px;
+        height: 30px;
+
+        border-radius: 25px;
+        background: none;
+        border: 1px solid var(--colBlueBtn);
+        color: var(--colDarck);
+        font-size: 12px;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 10px 0px 10px;
+        &:hover
+        {
+            background: var(--colorBlue200);
+            color: #F4F4FF;
+            cursor: pointer;
+        }
+    }
+    .controls__btn_active
+    {
+        background: var(--colorBlue200);
+        color: #F4F4FF;
+    }
+}

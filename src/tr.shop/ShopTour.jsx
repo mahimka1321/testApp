@@ -14,7 +14,7 @@ import Aleks from '../assets/img/Александров/1.webp';
 function ShopTour() {
 
     const {
-        numTheme,setNumTheme,search_active, routOP
+        numTheme,setNumTheme,search_active, routOP, vlad, priceTour,infoTourTitle
     }= Hoocks();
 
     
@@ -30,14 +30,14 @@ function ShopTour() {
                         }}
                     >
                         <div >
-                            <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='799p'/>
+                            <InfoPageTour title={vlad +' - '+ infoTourTitle} router='4 маршрута' price={priceTour}/>
                             <i className='back_btn'><Link to={`/info-tour${routOP}`}>Назад</Link></i>
                             <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                             <Link to='' className='popopo' style={{paddingLeft:'20px'}}>
                                 <img alt='' src={Aleks}/>
                                 <div className='sh_t__'>
                                     <h4>Введение</h4>
-                                    <h5>Александров</h5>
+                                    <h5>{vlad}</h5>
                                 </div>
                                 <div className='sh_popo__'>
                                     <p className='__nopius'>6 мин</p>

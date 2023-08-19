@@ -1,21 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Hoocks from '../Hoocks';
 import './wrapperTour.scss'
 
 import Aleks from '../assets/img/Александров/img.tour/1.webp';
 
 
 function WrapperTour(props) {
+
+    const {vlad, setVlad, priceTour, setPriceTour, infoTourTitle, setInfoTourTitle} = Hoocks()
+
     return ( 
-        <Link to='/shop-tour' className='popopo'>
+        <div className='popopo' onClick={()=>{ window.location.href = '/testapp/shop-tour'; setPriceTour(props.price); setInfoTourTitle(props.title);}}>
             <div className='dfdsd'>
-            <div style={{display:'flex'}}>
-            <img alt='' src={Aleks}/>
-            <div className='name_tour_'>
-                <h4>{props.title}</h4>
-                <h5>Александров</h5>
-            </div>
+            <div style={{display:'flex', minWidth:'200px', maxWidth:'0px', width:'100%'}}>
+                <img alt='' src={Aleks}/>
+                <div className='name_tour_'>
+                    <h4>{props.title}</h4>
+                    <h5>{vlad}</h5>
+                </div>
             </div>
             <div className='fdfd'>
                 <p className='star_'>
@@ -26,12 +29,12 @@ function WrapperTour(props) {
                     </span>
                     4.9
                 </p>
-                <p className='__nopius'>7 маршрутов</p>
-                <p className='__nopius'>43 мин</p>
-                <p className='__nopius'>799 р</p>
+                <p className='__nopius'>4 маршрута</p>
+                <p className='__nopius'>{props.time}</p>
+                <p className='__nopius'>{props.price}</p>
             </div>
             </div>
-        </Link>
+        </div>
     );
 }
 

@@ -51,30 +51,42 @@ export default function Hoocks() {
     localStorage.setItem("controlrouters", JSON.stringify(controlrouters));
 
 
-
-    const [vlad, setVlad] = useState('')
-
+    let storageVlad = JSON.parse(localStorage.getItem("vlad"));
+    const [vlad, setVlad] = useState(storageVlad || '')
+    localStorage.setItem("vlad", JSON.stringify(vlad));
 
 
     let storageRoutOP = JSON.parse(localStorage.getItem("routOP"));
     const [routOP, setRoutOP] = useState(storageRoutOP || '')
     localStorage.setItem("routOP", JSON.stringify(routOP));
 
+    let storageInfoTourTitle = JSON.parse(localStorage.getItem("infoTourTitle"));
+    const [infoTourTitle, setInfoTourTitle] = useState(storageInfoTourTitle || '')
+    localStorage.setItem("infoTourTitle", JSON.stringify(infoTourTitle));
 
 
-let storageOOO = JSON.parse(localStorage.getItem("arr"));
-const [arr, setArr] = useState(storageOOO || [1 , 3])
-localStorage.setItem("arr", JSON.stringify(arr));
+
+
+    
+
+
+
+    let storagePriceTour = JSON.parse(localStorage.getItem("priceTour"));
+    const [priceTour, setPriceTour] = useState(storagePriceTour || Number)
+    localStorage.setItem("priceTour", JSON.stringify(priceTour));
+
+
+        
 
 
 
     return{
         numTheme,setNumTheme,search_active, rorp, controlrouters, setControlRouters,
 
-        vlad, setVlad,
+        vlad, setVlad, priceTour, setPriceTour, infoTourTitle, setInfoTourTitle,
 
         routOP,setRoutOP,
-        arr, setArr
+
     }
 }
 

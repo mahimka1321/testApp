@@ -12,7 +12,6 @@ import Hoocks from '../Hoocks';
 /*  Стили главной страницы  */
 import './home.scss';
 
-
 /*  Суздаль  */
 import suzdal_tour_1 from '../assets/img/Суздаль/1.webp';
 /*  Владимир  */
@@ -52,63 +51,39 @@ import uyriev_polskiy_tour_1 from '../assets/img/Юрьев_Польский/1.w
 /*  Ярославль  */
 import yaroslavl_tour_1 from '../assets/img/Ярославль/1.webp';
 
-
-import ItemsNT from '../tourOP.json'
-
 function Home() {
-
-const {
- rorp,
-
-    setRoutOP,
-    setVlad,
-    arr,
-    setArr,
-    
-}= Hoocks();
+    const {
+        rorp,
+        setRoutOP,
+        setVlad
+        
+    }= Hoocks();
 
 
-React.useEffect(()=>{
-    function hasTouch() {
-        return 'ontouchstart' in document.documentElement
-               || navigator.maxTouchPoints > 0
-               || navigator.msMaxTouchPoints > 0;
-    }
-    
-    if (hasTouch()) { // remove all :hover stylesheets
-        try { // prevent exception on browsers not supporting DOM styleSheets properly
-            for (var si in document.styleSheets) {
-                var styleSheet = document.styleSheets[si];
-                if (!styleSheet.rules) continue;
-    
-                for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                    if (!styleSheet.rules[ri].selectorText) continue;
-    
-                    if (styleSheet.rules[ri].selectorText.match(':hover')) {
-                        styleSheet.deleteRule(ri);
+    React.useEffect(()=>{
+        function hasTouch() {
+            return 'ontouchstart' in document.documentElement
+                || navigator.maxTouchPoints > 0
+                || navigator.msMaxTouchPoints > 0;
+        }
+        
+        if (hasTouch()) { // remove all :hover stylesheets
+            try { // prevent exception on browsers not supporting DOM styleSheets properly
+                for (var si in document.styleSheets) {
+                    var styleSheet = document.styleSheets[si];
+                    if (!styleSheet.rules) continue;
+        
+                    for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                        if (!styleSheet.rules[ri].selectorText) continue;
+        
+                        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                            styleSheet.deleteRule(ri);
+                        }
                     }
                 }
-            }
-        } catch (ex) {}
-    }
-
-},[])
-
-const data = (ItemsNT)
-
-function cop(){
-
-    if(arr) 
-    {
-         setArr(null)
-         setArr([5 , 2])
-         localStorage.setItem("arr", JSON.stringify(arr));
-    } else {
-
-    }
-
-}
-//let pdfs = window.location.href = `/info-tour${routOP}`
+            } catch (ex) {}
+        }
+    },[])
 
     return (
         <div className="home_page" onClick={rorp}>
@@ -120,31 +95,31 @@ function cop(){
                     zIndex:'2',
                 }}>
                     <div className='container__new_tours cl__container-size'>
-                        <h2>{ data.find(({ id }) => { return id === arr[1]; })?.title }</h2>
+                        <h2>Новинки</h2>
                         <div className="container__scroll">
                             {/*  Суздаль  */}
                             <NewTour 
                                 imgTour={suzdal_tour_1}
-                                tourlink='/info-tour'
+                                opr='/suzdal' 
                                 title="Суздаль" 
                                 time="16" 
-                                routes="8 туров"
+                                routes="4 тура"
                             />
                             {/*  Александров  */}
                             <NewTour 
                                 imgTour={aleksandrov_tour_1} 
-                                tourlink='/info-tour'
+                                opr='/aleksandrov' 
                                 title="Александров" 
                                 time="11" 
-                                routes="5 туров"
+                                routes="4 тура"
                             />
                             {/*  Владимир  */}
                             <NewTour 
                                 imgTour={vladimir_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/vladimir' 
                                 title="Владимир" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Боголюбово  */}
                             <NewTour 
@@ -165,7 +140,14 @@ function cop(){
                         </div>
                     </div>
                     <div className='containet__box_tours cl__container-size'>
-                        <h2 onClick={cop}>{ data.find(({ id }) => { return id === arr[0]; })?.title }</h2>
+                        <h2>Туры</h2>
+                        <div className='menu_controls'>
+                            <button className='btn__menu_controls controls__btn_active'>Туры</button>
+                            <button className='btn__menu_controls'>Места отдыха</button>
+                            <button className='btn__menu_controls'>Кафе</button>
+                            <button className='btn__menu_controls'>Гостиницы</button>
+                            <button className='btn__menu_controls'>Для детей</button>
+                        </div>
                         <div 
                         style={{
                             textAlign:'center',                    
@@ -179,8 +161,7 @@ function cop(){
                                 opr='/vladimir' 
                                 title="Владимир" 
                                 time="28" 
-                                routes="14 туров"
-                                opTop={()=>{setVlad('Владимир'); setRoutOP('/vladimir')}}
+                                routes="4 тура"
                             />
                             {/*  Суздаль  */}
                             <Tour 
@@ -188,7 +169,7 @@ function cop(){
                                 opr='/suzdal' 
                                 title="Суздаль" 
                                 time="16" 
-                                routes="8 туров"
+                                routes="4 тура"
                             />
                             {/*  Александров  */}
                             <Tour 
@@ -196,134 +177,134 @@ function cop(){
                                 opr='/aleksandrov' 
                                 title="Александров" 
                                 time="11" 
-                                routes="5 туров"
+                                routes="4 тура"
                             />
                             {/*  Боголюбово  */}
                             <Tour imgTour={bogolubovo_tour_1}
-                            tourlink='/info-tour' 
+                                opr='/bogolubovo' 
                                 title="Боголюбово" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Гороховец  */}
                             <Tour 
                                 imgTour={gorohovec_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/gorohovec' 
                                 title="Гороховец" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Гусь Хрустальный  */}
                             <Tour 
                                 imgTour={goos_tour_1}
-                                tourlink='/info-tour' 
+                            opr='/goos'  
                                 title="Гусь Хрустальный" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Иваново  */}
                             <Tour 
                                 imgTour={ivanovo_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/ivanovo' 
                                 title="Иваново" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Калязин  */}
                             <Tour 
                                 imgTour={kaliazin_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/kaliazin' 
                                 title="Калязин" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Кидекша  */}
                             <Tour 
                                 imgTour={kidekha_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/kidekha' 
                                 title="Кидекша" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Кострома  */}
                             <Tour 
                                 imgTour={kostrama_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/kostrama' 
                                 title="Кострома" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Москва  */}
                             <Tour 
                                 imgTour={moskva_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/moskva' 
                                 title="Москва" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Переславль-Залевский  */}
                             <Tour 
                                 imgTour={pereslav_tour_1}
-                                tourlink='/info-tour' 
-                                title="Переславль-Залевский" 
+                                opr='/pereslav' 
+                                title="Переславль Залевский" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Плёс  */}
                             <Tour 
                                 imgTour={ples_tour_1}
-                                tourlink='/info-tour' 
+                            opr='/les'  
                                 title="Плёс" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Ростов Великий  */}
                             <Tour 
                                 imgTour={rostov_velikii_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/rostov-velikii' 
                                 title="Ростов Великий" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             /> 
                             {/*  Рыбинск  */}
                             <Tour 
                                 imgTour={ribinsk_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/ribinsk' 
                                 title="Рыбинск" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             /> 
                             {/*  Сергиев Посад  */}
                             <Tour 
                                 imgTour={sergeev_posad_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/sergeev-posad' 
                                 title="Сергиев Посад" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Углич  */}
                             <Tour 
                                 imgTour={yglich_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/yglich' 
                                 title="Углич" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Юрьев-Польский  */}
                             <Tour 
                                 imgTour={uyriev_polskiy_tour_1}
-                                tourlink='/info-tour' 
-                                title="Юрьев-Польский" 
+                                opr='/uyriev-polskiy' 
+                                title="Юрьев Польский" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                             {/*  Ярославль  */}
                             <Tour 
                                 imgTour={yaroslavl_tour_1}
-                                tourlink='/info-tour' 
+                                opr='/yaroslavl' 
                                 title="Ярославль" 
                                 time="28" 
-                                routes="14 туров"
+                                routes="4 тура"
                             />
                         </div>
                     </div>

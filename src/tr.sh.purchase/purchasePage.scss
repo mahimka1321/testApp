@@ -41,7 +41,9 @@
                 align-items: center;
                 width: 90%;
                 margin: 0 auto;
-                height: 50px;
+                min-height: 50px;
+                max-height: unset;
+                height: unset;
                 border-radius: 8px;
                 background: var(--colWhite_400);
                 box-shadow: 0px 0px 10px 0px var(--BH);
@@ -56,11 +58,13 @@
                 div 
                 {
                     display: block; 
-                    height: 35px;
+                    height: auto;
+                    padding: 5px;
                     margin-left: 10px;
                     color: var(--colDarck);
                     font-size: 14px;   
                     transition: 0s;     
+                    width: 290px;
                     h5
                     {                
                         font-weight: 300;
@@ -73,12 +77,12 @@
                 h2 
                 {
                     display: block;
-                    margin-left: 40%;
+                    width: 30px;
+                    margin: 0 auto;
                     font-size: 20px;
                     font-weight: 500;
                     opacity: 0.7;
                     color: var(--colorBlue200);
-
                     cursor: pointer;
                 }
             }

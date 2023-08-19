@@ -11,12 +11,12 @@
     background: var(--colorBlue200);
 
     will-change: transform;
-
+    cursor: pointer;
     //border: 0.5px solid var(--colorBlue200);
 
     .__img_tour
     {
-        cursor: pointer;
+        
         .img_container
         {
             height: 120px;
