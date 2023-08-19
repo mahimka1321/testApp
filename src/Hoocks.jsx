@@ -75,6 +75,10 @@ export default function Hoocks() {
     const [priceTour, setPriceTour] = useState(storagePriceTour || Number)
     localStorage.setItem("priceTour", JSON.stringify(priceTour));
 
+    let storageImgTour = JSON.parse(localStorage.getItem("imgTour"));
+    const [imgTour, setImgTour] = useState(storageImgTour || {})
+    localStorage.setItem("imgTour", JSON.stringify(imgTour));
+
 
         
 
@@ -84,6 +88,7 @@ export default function Hoocks() {
         numTheme,setNumTheme,search_active, rorp, controlrouters, setControlRouters,
 
         vlad, setVlad, priceTour, setPriceTour, infoTourTitle, setInfoTourTitle,
+        imgTour, setImgTour,
 
         routOP,setRoutOP,
 

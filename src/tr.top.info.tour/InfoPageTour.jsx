@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import './infoPageTour.scss'
 
+import Hoocks from '../Hoocks';
+
 import Aleks1 from '../assets/img/Александров/1.webp';
 import Aleks2 from '../assets/img/Александров/2.webp';
 import Aleks3 from '../assets/img/Александров/3.webp';
@@ -12,10 +14,11 @@ import Aleks5 from '../assets/img/Александров/5.webp';
 
 function InfoPageTour(props) {
 
-const [imgA, setImgA] = React.useState(Aleks1)
+    const {imgTour} = Hoocks()
+const [imgA, setImgA] = React.useState(imgTour)
 
 function img_A_1() {
-        setImgA(Aleks1);
+        setImgA(imgTour);
         let img_Ac_1 = document.getElementById('img_Ac_1'); 
         img_Ac_1.style.background = '#23A6FF'
 

@@ -9,7 +9,7 @@ import Aleks_1 from "../assets/img/Александров/1.webp";
 
 function PurchasePage() {
     const {
-        vlad, priceTour,infoTourTitle
+        vlad, priceTour,infoTourTitle,imgTour
     }= Hoocks();
 
 
@@ -36,7 +36,7 @@ function PurchasePage() {
                     </div>
                     <div className="purchase_info_tr">
                         <div className="container__i__tr" style={styleControlTour}>
-                            <img alt="" src={Aleks_1}/>
+                            <img alt="" src={imgTour}/>
                             <div>
                                 <h4>{infoTourTitle}</h4>
                                 <h5>{vlad}</h5>
