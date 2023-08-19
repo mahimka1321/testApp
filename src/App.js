@@ -9,6 +9,7 @@ import PurchasePage from './tr.sh.purchase/PurchasePage';
 import PagePurchaseTour from './tr.purchase.tour/PagePurchaseTour';
 import PageRouterTour from './tr.router.tour/PageRouterTour';
 import ScrollToTop from './ScrollToTop';
+import NotPoage from './NotPoage';
 
 import Hoocks from './Hoocks';
 
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/purchase-tour" element={<PurchasePage />}/>
                 <Route path="/tour" element={<PagePurchaseTour />}/>
                 <Route path="/router-tour" element={<PageRouterTour />}/>
+                <Route path="" element={<NotPoage />}/>
             </Routes>
             <MobMenu/>
         </>
