@@ -6,10 +6,10 @@ import './newTour.scss';
 
 function NewTour(props) {
     const {
-        routOP,setRoutOP,setVlad
+        setImgTour ,setRoutOP,setVlad
     } = Hoocks();
     return (
-        <div className='new_tour' onClick={()=>{setRoutOP(props.opr); setVlad(props.title); window.location.href = '/testapp/info-tour' + props.opr}}>
+        <div className='new_tour' onClick={()=>{setRoutOP(props.opr); setImgTour(props.imgTour); setVlad(props.title); window.location.href = '/testapp/info-tour' + props.opr}}>
             <div className='new__img_tour'>
                 <div className='img_container'>
                     <img className='img' alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={props.imgTour}/>

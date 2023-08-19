@@ -7,8 +7,7 @@ import './tour.scss';
 
 function Tour(props) {
     const {
-        routOP,setRoutOP,setVlad,
-        imgTour, setImgTour
+        setRoutOP,setVlad, setImgTour
     } = Hoocks();
 
 

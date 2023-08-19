@@ -8,7 +8,7 @@ import Aleks from '../assets/img/Александров/img.tour/1.webp';
 
 function WrapperTour(props) {
 
-    const {vlad, setVlad, priceTour, setPriceTour, infoTourTitle, setInfoTourTitle,imgTour} = Hoocks()
+    const {vlad, setPriceTour, setInfoTourTitle,imgTour} = Hoocks()
 
     return ( 
         <div className='popopo' onClick={()=>{ window.location.href = '/testapp/shop-tour'; setPriceTour(props.price); setInfoTourTitle(props.title);}}>

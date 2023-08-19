@@ -14,7 +14,7 @@ import Aleks from '../assets/img/Александров/1.webp';
 function ShopTour() {
 
     const {
-        numTheme,setNumTheme,search_active, routOP, vlad, priceTour,infoTourTitle,imgTour
+        routOP, vlad, priceTour,infoTourTitle,imgTour
     }= Hoocks();
 
     
