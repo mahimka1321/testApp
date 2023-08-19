@@ -15,10 +15,10 @@ function NotPoage() {
             alignItems: 'center'
         
         }}>
-            <div style={{color:'#616161', marginLeft:'20px'}}>
+            <div style={{color:'#616161', marginLeft:'20px', height:'auto'}}>
                 <h1>Страница не найдена или была неправильно загруженна</h1>
-                <p>Найдите страницу в ручную</p>
-                <Link style={{textDecoration:'none'}} to='/'>Вернуться на главную страницу</Link>
+                <h3>Найдите страницу вручную</h3>
+                <Link style={{display:'block', textDecoration:'none', marginTop:'10px'}} to='/'>{`<`} Вернуться на главную страницу</Link>
             </div>
         </div>
     );
