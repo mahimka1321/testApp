@@ -221,7 +221,7 @@ function Home() {
                             {/*  Кидекша  */}
                             <Tour 
                                 imgTour={kidekha_tour_1}
-                                opr='/kidekha' 
+                                opr='/kideksha' 
                                 title="Кидекша" 
                                 time="28" 
                                 routes="4 тура"
