@@ -17,12 +17,18 @@ const Carousel = (props) => {
     const next = () => {
         if (currentIndex < 2) {
             setCurrentIndex(prevState => prevState + 1)
+            if(currentIndex > 2) {
+                setCurrentIndex(2)
+            }
         }
     }
 
     const prev = () => {
         if (currentIndex > 0) {
             setCurrentIndex(prevState => prevState - 1)
+            if(currentIndex < 0) {
+                setCurrentIndex(0)
+            }
         }
     }
 
@@ -41,11 +47,11 @@ const Carousel = (props) => {
         const currentTouch = e.touches[0].clientX
         const diff = touchDown - currentTouch
 
-        if (diff > 3) {
+        if (diff > 0) {
             next()
         }
 
-        if (diff < -3) {
+        if (diff < 0) {
             prev()
         }
 
