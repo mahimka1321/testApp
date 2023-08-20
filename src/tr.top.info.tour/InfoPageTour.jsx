@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './infoPageTour.scss'
 
 import Hoocks from '../Hoocks';
-
+import Carousel from "./components/Carousel/Carousel"
 import Aleks1 from '../assets/img/Александров/1.webp';
 import Aleks2 from '../assets/img/Александров/2.webp';
 import Aleks3 from '../assets/img/Александров/3.webp';
@@ -17,95 +17,19 @@ function InfoPageTour(props) {
     const {imgTour} = Hoocks()
 const [imgA, setImgA] = React.useState(imgTour)
 
-function img_A_1() {
-        setImgA(imgTour);
-        let img_Ac_1 = document.getElementById('img_Ac_1'); 
-        img_Ac_1.style.background = '#23A6FF'
-
-        let img_Ac_2 = document.getElementById('img_Ac_2'); 
-        let img_Ac_3 = document.getElementById('img_Ac_3'); 
-        let img_Ac_4 = document.getElementById('img_Ac_4'); 
-        let img_Ac_5 = document.getElementById('img_Ac_5'); 
-        img_Ac_2.style.background = '#F4F4FF'
-        img_Ac_3.style.background = '#F4F4FF'
-        img_Ac_4.style.background = '#F4F4FF'
-        img_Ac_5.style.background = '#F4F4FF'
-
-    }
-
-function img_A_2() {
-        setImgA(Aleks2);
-        let img_Ac_2 = document.getElementById('img_Ac_2'); 
-        img_Ac_2.style.background = '#23A6FF'
-
-        let img_Ac_1 = document.getElementById('img_Ac_1'); 
-        let img_Ac_3 = document.getElementById('img_Ac_3'); 
-        let img_Ac_4 = document.getElementById('img_Ac_4'); 
-        let img_Ac_5 = document.getElementById('img_Ac_5'); 
-        img_Ac_1.style.background = '#F4F4FF'
-        img_Ac_3.style.background = '#F4F4FF'
-        img_Ac_4.style.background = '#F4F4FF'
-        img_Ac_5.style.background = '#F4F4FF'
-    }
-
-function img_A_3() {
-        setImgA(Aleks3);
-        let img_Ac_3 = document.getElementById('img_Ac_3'); 
-        img_Ac_3.style.background = '#23A6FF'
-
-        let img_Ac_1 = document.getElementById('img_Ac_1'); 
-        let img_Ac_2 = document.getElementById('img_Ac_2'); 
-        let img_Ac_4 = document.getElementById('img_Ac_4'); 
-        let img_Ac_5 = document.getElementById('img_Ac_5'); 
-        img_Ac_1.style.background = '#F4F4FF'
-        img_Ac_2.style.background = '#F4F4FF'
-        img_Ac_4.style.background = '#F4F4FF'
-        img_Ac_5.style.background = '#F4F4FF'
-    }
-
-function img_A_4() {
-        setImgA(Aleks4);
-        let img_Ac_4 = document.getElementById('img_Ac_4'); 
-        img_Ac_4.style.background = '#23A6FF'
-
-        let img_Ac_1 = document.getElementById('img_Ac_1'); 
-        let img_Ac_3 = document.getElementById('img_Ac_3'); 
-        let img_Ac_2 = document.getElementById('img_Ac_2'); 
-        let img_Ac_5 = document.getElementById('img_Ac_5'); 
-        img_Ac_1.style.background = '#F4F4FF'
-        img_Ac_3.style.background = '#F4F4FF'
-        img_Ac_2.style.background = '#F4F4FF'
-        img_Ac_5.style.background = '#F4F4FF'
-    }
-
-function img_A_5() {
-        setImgA(Aleks5);
-        let img_Ac_5 = document.getElementById('img_Ac_5'); 
-        img_Ac_5.style.background = '#23A6FF'
-
-        let img_Ac_1 = document.getElementById('img_Ac_1'); 
-        let img_Ac_3 = document.getElementById('img_Ac_3'); 
-        let img_Ac_4 = document.getElementById('img_Ac_4'); 
-        let img_Ac_2 = document.getElementById('img_Ac_2'); 
-        img_Ac_1.style.background = '#F4F4FF'
-        img_Ac_3.style.background = '#F4F4FF'
-        img_Ac_4.style.background = '#F4F4FF'
-        img_Ac_2.style.background = '#F4F4FF'
-    }
 
     return (
         <>
             <div className='top__info_tour'>
-                <div className='slider__tour_info'>
-                    <img alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={imgA}/>
-                    <div className='__slider_swap'>
-                        <span onClick={img_A_1} id='img_Ac_1'></span>
-                        <span onClick={img_A_2} id='img_Ac_2'></span>
-                        <span onClick={img_A_3} id='img_Ac_3'></span>
-                        <span onClick={img_A_4} id='img_Ac_4'></span>
-                        <span onClick={img_A_5} id='img_Ac_5'></span>
-                    </div>
-                </div>
+
+            <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto'}}>
+            <Carousel>
+                <img className='img_op' src={imgA} alt="placeholder" />
+                <img className='img_op' src={imgA} alt="placeholder" />
+                <img className='img_op' src={imgA} alt="placeholder" />
+            </Carousel>
+        </div>
+
                 <div className='container__wrapper_info'>
                     <h1 style={{display:'block',wordWrap: 'break-word'}}>{props.title}</h1>
                     <div className='status__tour'>

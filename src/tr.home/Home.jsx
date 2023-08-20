@@ -132,7 +132,7 @@ function Home() {
                             <button className='btn__menu_controls controls__btn_active'>Туры</button>
                             <button className='btn__menu_controls'>Места отдыха</button>
                             <button className='btn__menu_controls'>Кафе</button>
-                            
+
                             <button className='btn__menu_controls'>Гостиницы</button>
                             <button className='btn__menu_controls'>Для детей</button>
                         </div>
