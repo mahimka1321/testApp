@@ -17,18 +17,19 @@ const Carousel = (props) => {
     const next = () => {
         if (currentIndex < 2) {
             setCurrentIndex(prevState => prevState + 1)
-            if(currentIndex > 2) {
-                setCurrentIndex(2)
-            }
         }
+    }
+
+    if(currentIndex > 2) {
+        setCurrentIndex(2)
+    }
+    if(currentIndex < 0) {
+        setCurrentIndex(0)
     }
 
     const prev = () => {
         if (currentIndex > 0) {
             setCurrentIndex(prevState => prevState - 1)
-            if(currentIndex < 0) {
-                setCurrentIndex(0)
-            }
         }
     }
 
