@@ -13,7 +13,7 @@ import Aleks from '../assets/img/Александров/1.webp';
 
 function PagePurchaseTour() {
     const {
-        numTheme,setNumTheme,search_active,controlrouters,setControlRouters
+        vlad, infoTourTitle, setControlRouters
     }= Hoocks();
 
 
@@ -51,7 +51,7 @@ function PagePurchaseTour() {
                     }}
                 >
                     <div>
-                        <InfoPageTour title='Александров - семейный тур' router='4 маршрута' price='Куплено'/>
+                        <InfoPageTour title={vlad +' - '+ infoTourTitle} router='4 маршрута' price='Куплено'/>
                         <i className='back_btn'><Link to='/profile'>Назад</Link></i>
                         <div className='containet__wrapper_in-tour' style={{padding:'0'}}>
                         <p style={{marginLeft:'20px',marginBottom:'15px',padding:'10px', color:'#616161'}}>Для того что бы начать маршрут, сделайте <span style={{color:'#23A6FF'}}> клик </span> по одному из маршрутов</p>

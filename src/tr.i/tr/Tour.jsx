@@ -16,7 +16,7 @@ function Tour(props) {
 
 
     return (
-        <div  className='__tour' onClick={()=>{setRoutOP(props.opr); setVlad(props.title); setImgTour(props.imgTour); window.location.href = '/testapp/info-tour' + props.opr}}>
+        <div  className='__tour' onClick={()=>{setRoutOP(props.opr); setVlad(props.title); setImgTour(props.imgTour); window.location.href = '/testapp'+props.link+props.opr}}>
             <div className='__img_tour'>
                 <div className='img_container'>
                     <img className='img' alt='Тур, ТурБокс, TourBox, дешовые онлайн туры по всей россии.' src={props.imgTour}/>

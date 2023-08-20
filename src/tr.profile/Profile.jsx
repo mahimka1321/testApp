@@ -11,6 +11,7 @@ import Hoocks from '../Hoocks';
 /*  Стили главной страницы  */
 import './profile.scss';
 
+import HoockProfil from "../HoockProfil";
 
 /*  Суздаль  */
 import suzdal_tour_1 from '../assets/img/Суздаль/1.webp';
@@ -25,6 +26,10 @@ const {
     numTheme,setNumTheme,search_active, rorp,
 
 }= Hoocks();
+
+const {
+    vladimir
+} = HoockProfil();
 
     return (
         <div className="profile_page" onClick={rorp}>
@@ -57,6 +62,7 @@ const {
                         }} 
                         className="container__control_tour"
                         >
+                            {vladimir}
                         </div>
                     </div>
                 </div> 

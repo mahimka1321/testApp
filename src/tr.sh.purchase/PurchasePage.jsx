@@ -6,11 +6,15 @@ import Hoocks from "../Hoocks";
 import './purchasePage.scss';
 
 import Aleks_1 from "../assets/img/Александров/1.webp";
-
+import HoockProfil from "../HoockProfil";
 function PurchasePage() {
     const {
         vlad, priceTour,infoTourTitle,imgTour
     }= Hoocks();
+
+    const {
+        numT, setNumT, setFd
+    } = HoockProfil();
 
 
     const [styleTour, setStyleTour] = useState('flex')
@@ -47,7 +51,7 @@ function PurchasePage() {
                     <ul>
                         <div>
                             <Link to='/shop-tour'>Назад</Link>
-                            <Link to='/profile' style={styleControlTour}>Оплатить</Link>
+                            <Link  to='' onClick={()=>{setNumT(vlad); setFd(1); window.location.href = '/testapp/profile'}} style={styleControlTour}>Оплатить</Link>
                         </div>
                     </ul>
                 </div>

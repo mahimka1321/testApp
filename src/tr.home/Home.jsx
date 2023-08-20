@@ -101,6 +101,7 @@ function Home() {
                             <NewTour 
                                 imgTour={suzdal_tour_1}
                                 opr='/suzdal' 
+                                link='/info-tour'
                                 title="Суздаль" 
                                 time="16" 
                                 routes="4 тура"
@@ -109,6 +110,7 @@ function Home() {
                             <NewTour 
                                 imgTour={aleksandrov_tour_1} 
                                 opr='/aleksandrov' 
+                                link='/info-tour'
                                 title="Александров" 
                                 time="11" 
                                 routes="4 тура"
@@ -117,25 +119,10 @@ function Home() {
                             <NewTour 
                                 imgTour={vladimir_tour_1}
                                 opr='/vladimir' 
+                                link='/info-tour'
                                 title="Владимир" 
                                 time="28" 
                                 routes="4 тура"
-                            />
-                            {/*  Боголюбово  */}
-                            <NewTour 
-                                imgTour={bogolubovo_tour_1}
-                                tourlink='/info-tour' 
-                                title="Боголюбово" 
-                                time="28" 
-                                routes="14 туров"
-                            />
-                            {/*  Гороховец  */}
-                            <NewTour 
-                                imgTour={gorohovec_tour_1}
-                                tourlink='/info-tour' 
-                                title="Гороховец" 
-                                time="28" 
-                                routes="14 туров"
                             />
                         </div>
                     </div>
@@ -145,6 +132,7 @@ function Home() {
                             <button className='btn__menu_controls controls__btn_active'>Туры</button>
                             <button className='btn__menu_controls'>Места отдыха</button>
                             <button className='btn__menu_controls'>Кафе</button>
+                            
                             <button className='btn__menu_controls'>Гостиницы</button>
                             <button className='btn__menu_controls'>Для детей</button>
                         </div>
@@ -159,6 +147,7 @@ function Home() {
                             <Tour 
                                 imgTour={vladimir_tour_1}
                                 opr='/vladimir' 
+                                link='/info-tour'
                                 title="Владимир" 
                                 time="28" 
                                 routes="4 тура"
@@ -167,6 +156,7 @@ function Home() {
                             <Tour 
                                 imgTour={suzdal_tour_1}
                                 opr='/suzdal' 
+                                link='/info-tour'
                                 title="Суздаль" 
                                 time="16" 
                                 routes="4 тура"
@@ -175,6 +165,7 @@ function Home() {
                             <Tour 
                                 imgTour={aleksandrov_tour_1} 
                                 opr='/aleksandrov' 
+                                link='/info-tour'
                                 title="Александров" 
                                 time="11" 
                                 routes="4 тура"
@@ -182,6 +173,7 @@ function Home() {
                             {/*  Боголюбово  */}
                             <Tour imgTour={bogolubovo_tour_1}
                                 opr='/bogolubovo' 
+                                link='/info-tour'
                                 title="Боголюбово" 
                                 time="28" 
                                 routes="4 тура"
@@ -190,6 +182,7 @@ function Home() {
                             <Tour 
                                 imgTour={gorohovec_tour_1}
                                 opr='/gorohovec' 
+                                link='/info-tour'
                                 title="Гороховец" 
                                 time="28" 
                                 routes="4 тура"
@@ -197,7 +190,8 @@ function Home() {
                             {/*  Гусь Хрустальный  */}
                             <Tour 
                                 imgTour={goos_tour_1}
-                            opr='/goos'  
+                                opr='/goos'  
+                                link='/info-tour'
                                 title="Гусь Хрустальный" 
                                 time="28" 
                                 routes="4 тура"
@@ -206,6 +200,7 @@ function Home() {
                             <Tour 
                                 imgTour={ivanovo_tour_1}
                                 opr='/ivanovo' 
+                                link='/info-tour'
                                 title="Иваново" 
                                 time="28" 
                                 routes="4 тура"
@@ -214,6 +209,7 @@ function Home() {
                             <Tour 
                                 imgTour={kaliazin_tour_1}
                                 opr='/kaliazin' 
+                                link='/info-tour'
                                 title="Калязин" 
                                 time="28" 
                                 routes="4 тура"
@@ -222,6 +218,7 @@ function Home() {
                             <Tour 
                                 imgTour={kidekha_tour_1}
                                 opr='/kideksha' 
+                                link='/info-tour'
                                 title="Кидекша" 
                                 time="28" 
                                 routes="4 тура"
@@ -230,6 +227,7 @@ function Home() {
                             <Tour 
                                 imgTour={kostrama_tour_1}
                                 opr='/kostrama' 
+                                link='/info-tour'
                                 title="Кострома" 
                                 time="28" 
                                 routes="4 тура"
@@ -238,6 +236,7 @@ function Home() {
                             <Tour 
                                 imgTour={moskva_tour_1}
                                 opr='/moskva' 
+                                link='/info-tour'
                                 title="Москва" 
                                 time="28" 
                                 routes="4 тура"
@@ -246,6 +245,7 @@ function Home() {
                             <Tour 
                                 imgTour={pereslav_tour_1}
                                 opr='/pereslav' 
+                                link='/info-tour'
                                 title="Переславль Залевский" 
                                 time="28" 
                                 routes="4 тура"
@@ -253,7 +253,8 @@ function Home() {
                             {/*  Плёс  */}
                             <Tour 
                                 imgTour={ples_tour_1}
-                            opr='/les'  
+                                opr='/les'  
+                                link='/info-tour'
                                 title="Плёс" 
                                 time="28" 
                                 routes="4 тура"
@@ -262,6 +263,7 @@ function Home() {
                             <Tour 
                                 imgTour={rostov_velikii_tour_1}
                                 opr='/rostov-velikii' 
+                                link='/info-tour'
                                 title="Ростов Великий" 
                                 time="28" 
                                 routes="4 тура"
@@ -270,6 +272,7 @@ function Home() {
                             <Tour 
                                 imgTour={ribinsk_tour_1}
                                 opr='/ribinsk' 
+                                link='/info-tour'
                                 title="Рыбинск" 
                                 time="28" 
                                 routes="4 тура"
@@ -278,6 +281,7 @@ function Home() {
                             <Tour 
                                 imgTour={sergeev_posad_tour_1}
                                 opr='/sergeev-posad' 
+                                link='/info-tour'
                                 title="Сергиев Посад" 
                                 time="28" 
                                 routes="4 тура"
@@ -286,6 +290,7 @@ function Home() {
                             <Tour 
                                 imgTour={yglich_tour_1}
                                 opr='/yglich' 
+                                link='/info-tour'
                                 title="Углич" 
                                 time="28" 
                                 routes="4 тура"
@@ -294,6 +299,7 @@ function Home() {
                             <Tour 
                                 imgTour={uyriev_polskiy_tour_1}
                                 opr='/uyriev-polskiy' 
+                                link='/info-tour'
                                 title="Юрьев Польский" 
                                 time="28" 
                                 routes="4 тура"
@@ -302,6 +308,7 @@ function Home() {
                             <Tour 
                                 imgTour={yaroslavl_tour_1}
                                 opr='/yaroslavl' 
+                                link='/info-tour'
                                 title="Ярославль" 
                                 time="28" 
                                 routes="4 тура"
