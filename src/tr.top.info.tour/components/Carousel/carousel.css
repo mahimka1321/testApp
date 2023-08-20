@@ -79,7 +79,7 @@
 
 }
 
-@media (hover: none) and (pointer: coarse) 
+@media (hover: none) and (pointer: coarse) and (pointer:none)
 {
     .left-arrow, .right-arrow 
     {
