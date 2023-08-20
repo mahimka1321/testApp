@@ -16,7 +16,10 @@ const Carousel = (props) => {
 
     const next = () => {
         if (currentIndex < 2) {
-            setCurrentIndex(prevState => prevState + 1)
+            setCurrentIndex( currentIndex + 1)
+            if (currentIndex === 2) {
+                setCurrentIndex(2)
+            }
         }
     }
 
@@ -29,7 +32,10 @@ const Carousel = (props) => {
 
     const prev = () => {
         if (currentIndex > 0) {
-            setCurrentIndex(prevState => prevState - 1)
+            setCurrentIndex(currentIndex - 1)
+            if (currentIndex === 0) {
+                setCurrentIndex(0)
+            }
         }
     }
 
@@ -59,6 +65,35 @@ const Carousel = (props) => {
         setTouchPosition(null)
     }
 
+    const [btnColor_0, setBtnColor_0] = useState("#F4F4FF");
+    const [btnColor_1, setBtnColor_1] = useState("#F4F4FF");
+    const [btnColor_2, setBtnColor_2] = useState("#F4F4FF");
+
+
+
+
+    useEffect(()=> {
+        if(currentIndex === 0){
+            setBtnColor_0("#23A6FF")
+        } else {
+            setBtnColor_0("#F4F4FF")
+        }
+        if(currentIndex === 1){
+            setBtnColor_1("#23A6FF")
+        }
+        else {
+            setBtnColor_1("#F4F4FF")
+        }
+        if(currentIndex === 2){
+            setBtnColor_2("#23A6FF")
+        }
+        else {
+            setBtnColor_2("#F4F4FF")
+        }
+    },[currentIndex])
+    
+
+
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper">
@@ -76,9 +111,27 @@ const Carousel = (props) => {
                     
                 </div>
                 <div className='container__wrapper_btn'>
-                    <button className='btn_wrapper' onClick={()=>{setCurrentIndex(0)}}></button>
-                    <button className='btn_wrapper' onClick={()=>{setCurrentIndex(1)}}></button>
-                    <button className='btn_wrapper' onClick={()=>{setCurrentIndex(2)}}></button>
+                    <button className='btn_wrapper' 
+                    onClick={()=>{
+                        setCurrentIndex(0);    
+                    }}
+                    style={{ 
+                        backgroundColor: btnColor_0
+                    }}></button>
+                    <button className='btn_wrapper' 
+                    onClick={()=>{
+                        setCurrentIndex(1)
+                    }}
+                    style={{ 
+                        backgroundColor: btnColor_1
+                    }}></button>
+                    <button className='btn_wrapper' 
+                    onClick={()=>{
+                        setCurrentIndex(2)
+                    }}
+                    style={{ 
+                        backgroundColor: btnColor_2
+                    }}></button>
                 </div>
             </div>
         </div>
