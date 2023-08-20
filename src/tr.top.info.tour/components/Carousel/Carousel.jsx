@@ -41,11 +41,11 @@ const Carousel = (props) => {
         const currentTouch = e.touches[0].clientX
         const diff = touchDown - currentTouch
 
-        if (diff > 5) {
+        if (diff > 3) {
             next()
         }
 
-        if (diff < -5) {
+        if (diff < -3) {
             prev()
         }
 
@@ -55,13 +55,6 @@ const Carousel = (props) => {
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper">
-                {/* You can alwas change the content of the button to other things */}
-                {
-                    currentIndex > 0 &&
-                    <button onClick={prev} className="left-arrow">
-                        &lt;
-                    </button>
-                }
                 <div
                     className="carousel-content-wrapper"
                     onTouchStart={handleTouchStart}
@@ -73,14 +66,13 @@ const Carousel = (props) => {
                     >
                         {children}
                     </div>
+                    
                 </div>
-                {/* You can alwas change the content of the button to other things */}
-                {
-                    currentIndex < (length - 1) &&
-                    <button onClick={next} className="right-arrow">
-                        &gt;
-                    </button>
-                }
+                <div className='container__wrapper_btn'>
+                    <button className='btn_wrapper' onClick={()=>{setCurrentIndex(0)}}></button>
+                    <button className='btn_wrapper' onClick={()=>{setCurrentIndex(1)}}></button>
+                    <button className='btn_wrapper' onClick={()=>{setCurrentIndex(2)}}></button>
+                </div>
             </div>
         </div>
     )

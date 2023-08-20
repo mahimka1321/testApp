@@ -79,11 +79,26 @@
 
 }
 
-@media not all and (hover: none) and (pointer: coarse) and (pointer:none)
+
+.container__wrapper_btn
 {
-    .left-arrow, .right-arrow 
+    position:   absolute;
+    display: flex;
+    left: 45%;
+    top: 90%;
+}
+
+.btn_wrapper
+{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #F4F4FF;
+    margin: 3px;
+    cursor: pointer;
+    &:hover
     {
-        display: none;
-        
+        background: var(--colorBlue200);
     }
 }
